@@ -1,43 +1,55 @@
 package tgbot
 
 import (
+	"encoding/json"
 	"errors"
+	"fmt"
 	"io"
 	"net/http"
+	"time"
 
 	jp "github.com/buger/jsonparser"
 )
 
-func httpGet(url string) ([]byte, error) {
+func httpGetJSON(url string, d any) error {
 
 	req, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
-		return nil, err
+		return err
 	}
 	req.Header.Set(`Content-Type`, `application/json`)
-	client := &http.Client{}
+	client := &http.Client{
+		Timeout: 10 * time.Second,
+	}
 	res, err := client.Do(req)
 	if err != nil {
-		return nil, err
+		return err
 	}
 	ab, err := io.ReadAll(res.Body)
 	res.Body.Close()
 	if err != nil {
-		return nil, err
+		return err
 	}
+
+	fmt.Println(string(ab))
 
 	ok, err := jp.GetBoolean(ab, `ok`)
 	if !ok {
-		return nil, errors.New(`api fail: no "ok:true"`)
+		return errors.New(`api fail: no "ok:true"`)
 	}
 
 	ab, t, _, err := jp.Get(ab, `result`)
 	if len(ab) == 0 {
-		return nil, errors.New(`api fail: no result`)
+		return errors.New(`api fail: no result`)
 	}
-	if t != jp.Object {
-		return nil, errors.New(`api fail: result is not object`)
+	if t != jp.Object && t != jp.Array {
+		return errors.New(`api fail: result is not object`)
 	}
 
-	return ab, nil
+	err = json.Unmarshal(ab, d)
+	if err != nil {
+		return err
+	}
+
+	return nil
 }

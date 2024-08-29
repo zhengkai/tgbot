@@ -1,0 +1,49 @@
+syntax = "proto3";
+option go_package = "/pb";
+package pb;
+
+message User {
+    // Unique identifier for this user or bot. This number may have more than 32
+    // significant bits and some programming languages may have difficulty/silent
+    // defects in interpreting it. But it has at most 52 significant bits, so a
+    // 64-bit integer or double-precision float type are safe for storing this identifier.
+    int64 id = 1;
+
+    // True, if this user is a bot.
+    bool is_bot = 2;
+
+    // User's or bot's first name.
+    string first_name = 3;
+
+    // Optional. User's or bot's last name.
+    string last_name = 4;
+
+    // Optional. User's or bot's username.
+    string username = 5;
+
+    // Optional. IETF language tag of the user's language.
+    string language_code = 6;
+
+    // Optional. True, if this user is a Telegram Premium user.
+    bool is_premium = 7;
+
+    // Optional. True, if this user added the bot to the attachment menu.
+    bool added_to_attachment_menu = 8;
+
+    // Optional. True, if the bot can be invited to groups. Returned only in getMe.
+    bool can_join_groups = 9;
+
+    // Optional. True, if privacy mode is disabled for the bot. Returned only in getMe.
+    bool can_read_all_group_messages = 10;
+
+    // Optional. True, if the bot supports inline queries. Returned only in getMe.
+    bool supports_inline_queries = 11;
+
+    // Optional. True, if the bot can be connected to a Telegram Business account
+    // to receive its messages. Returned only in getMe.
+    bool can_connect_to_business = 12;
+
+    // Optional. True, if the bot has a main Web App. Returned only in getMe.
+    bool has_main_web_app = 13;
+}
+

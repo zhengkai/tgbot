@@ -1,7 +1,9 @@
 package tgbot
 
 import (
-	"encoding/json"
+	"fmt"
+
+	"github.com/zhengkai/tgbot/pb"
 )
 
 type api struct {
@@ -16,14 +18,27 @@ func (b *Bot) API() *api {
 	}
 }
 
-func (a *api) GetMe() (*Me, error) {
-	ab, err := httpGet(a.urlBase + `getMe`)
+func (a *api) GetMe() (*pb.User, error) {
+
+	d := &pb.User{}
+	err := httpGetJSON(a.urlBase+`getMe`, d)
 	if err != nil {
 		return nil, err
 	}
 
-	d := &Me{}
-	err = json.Unmarshal(ab, d)
+	return d, nil
+}
+
+func (a *api) GetUpdates(offset int) ([]*pb.Update, error) {
+
+	url := a.urlBase + `getUpdates`
+
+	if offset > 0 {
+		url += fmt.Sprintf(`?offset=%d`, offset)
+	}
+
+	d := []*pb.Update{}
+	err := httpGetJSON(url, &d)
 	if err != nil {
 		return nil, err
 	}

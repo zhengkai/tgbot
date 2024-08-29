@@ -1,0 +1,259 @@
+syntax = "proto3";
+option go_package = "/pb";
+package pb;
+
+message Chat {
+    // Define the Chat fields here according to your schema
+}
+
+message MessageOrigin {
+    // Define the MessageOrigin fields here according to your schema
+}
+
+message ExternalReplyInfo {
+    // Define the ExternalReplyInfo fields here according to your schema
+}
+
+message TextQuote {
+    // Define the TextQuote fields here according to your schema
+}
+
+message Story {
+    // Define the Story fields here according to your schema
+}
+
+message Animation {
+    // Define the Animation fields here according to your schema
+}
+
+message Audio {
+    // Define the Audio fields here according to your schema
+}
+
+message Document {
+    // Define the Document fields here according to your schema
+}
+
+message PaidMediaInfo {
+    // Define the PaidMediaInfo fields here according to your schema
+}
+
+message PhotoSize {
+    // Define the PhotoSize fields here according to your schema
+}
+
+message Sticker {
+    // Define the Sticker fields here according to your schema
+}
+
+message Video {
+    // Define the Video fields here according to your schema
+}
+
+message VideoNote {
+    // Define the VideoNote fields here according to your schema
+}
+
+message Voice {
+    // Define the Voice fields here according to your schema
+}
+
+message MessageEntity {
+    // Define the MessageEntity fields here according to your schema
+}
+
+message LinkPreviewOptions {
+    // Define the LinkPreviewOptions fields here according to your schema
+}
+
+message Contact {
+    // Define the Contact fields here according to your schema
+}
+
+message Dice {
+    // Define the Dice fields here according to your schema
+}
+
+message Game {
+    // Define the Game fields here according to your schema
+}
+
+message Poll {
+    // Define the Poll fields here according to your schema
+}
+
+message Venue {
+    // Define the Venue fields here according to your schema
+}
+
+message Location {
+    // Define the Location fields here according to your schema
+}
+
+message MaybeInaccessibleMessage {
+    // Define the MaybeInaccessibleMessage fields here according to your schema
+}
+
+message Invoice {
+    // Define the Invoice fields here according to your schema
+}
+
+message SuccessfulPayment {
+    // Define the SuccessfulPayment fields here according to your schema
+}
+
+message RefundedPayment {
+    // Define the RefundedPayment fields here according to your schema
+}
+
+message UsersShared {
+    // Define the UsersShared fields here according to your schema
+}
+
+message ChatShared {
+    // Define the ChatShared fields here according to your schema
+}
+
+message WriteAccessAllowed {
+    // Define the WriteAccessAllowed fields here according to your schema
+}
+
+message PassportData {
+    // Define the PassportData fields here according to your schema
+}
+
+message ProximityAlertTriggered {
+    // Define the ProximityAlertTriggered fields here according to your schema
+}
+
+message ChatBoostAdded {
+    // Define the ChatBoostAdded fields here according to your schema
+}
+
+message ChatBackground {
+    // Define the ChatBackground fields here according to your schema
+}
+
+message ForumTopicCreated {
+    // Define the ForumTopicCreated fields here according to your schema
+}
+
+message ForumTopicEdited {
+    // Define the ForumTopicEdited fields here according to your schema
+}
+
+message ForumTopicClosed {
+    // Define the ForumTopicClosed fields here according to your schema
+}
+
+message ForumTopicReopened {
+    // Define the ForumTopicReopened fields here according to your schema
+}
+
+message GeneralForumTopicHidden {
+    // Define the GeneralForumTopicHidden fields here according to your schema
+}
+
+message GeneralForumTopicUnhidden {
+    // Define the GeneralForumTopicUnhidden fields here according to your schema
+}
+
+message GiveawayCreated {
+    // Define the GiveawayCreated fields here according to your schema
+}
+
+message Giveaway {
+    // Define the Giveaway fields here according to your schema
+}
+
+message GiveawayWinners {
+    // Define the GiveawayWinners fields here according to your schema
+}
+
+message GiveawayCompleted {
+    // Define the GiveawayCompleted fields here according to your schema
+}
+
+message VideoChatScheduled {
+    // Define the VideoChatScheduled fields here according to your schema
+}
+
+message VideoChatStarted {
+    // Define the VideoChatStarted fields here according to your schema
+}
+
+message VideoChatEnded {
+    // Define the VideoChatEnded fields here according to your schema
+}
+
+message VideoChatParticipantsInvited {
+    // Define the VideoChatParticipantsInvited fields here according to your schema
+}
+
+message WebAppData {
+    // Define the WebAppData fields here according to your schema
+}
+
+message InlineKeyboardMarkup {
+    // Define the InlineKeyboardMarkup fields here according to your schema
+}
+
+message MessageAutoDeleteTimerChanged {
+    // Define the MessageAutoDeleteTimerChanged fields here according to your schema
+}
+
+message BusinessConnection {
+    // 定义 BusinessConnection 消息的字段
+}
+
+message BusinessMessagesDeleted {
+    // 定义 BusinessMessagesDeleted 消息的字段
+}
+
+message MessageReactionUpdated {
+    // 定义 MessageReactionUpdated 消息的字段
+}
+
+message MessageReactionCountUpdated {
+    // 定义 MessageReactionCountUpdated 消息的字段
+}
+
+message InlineQuery {
+    // 定义 InlineQuery 消息的字段
+}
+
+message ChosenInlineResult {
+    // 定义 ChosenInlineResult 消息的字段
+}
+
+message CallbackQuery {
+    // 定义 CallbackQuery 消息的字段
+}
+
+message ShippingQuery {
+    // 定义 ShippingQuery 消息的字段
+}
+
+message PreCheckoutQuery {
+    // 定义 PreCheckoutQuery 消息的字段
+}
+
+message PollAnswer {
+    // 定义 PollAnswer 消息的字段
+}
+
+message ChatMemberUpdated {
+    // 定义 ChatMemberUpdated 消息的字段
+}
+
+message ChatJoinRequest {
+    // 定义 ChatJoinRequest 消息的字段
+}
+
+message ChatBoostUpdated {
+    // 定义 ChatBoostUpdated 消息的字段
+}
+
+message ChatBoostRemoved {
+    // 定义 ChatBoostRemoved 消息的字段
+}
