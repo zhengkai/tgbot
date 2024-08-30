@@ -5,6 +5,53 @@ package pb;
 import "misc.proto";
 import "user.proto";
 
+// Message representing a request to send a message.
+message SendMessage {
+  // Unique identifier of the business connection on behalf of which the message will be sent
+  string business_connection_id = 1;
+
+  // Unique identifier for the target chat or username of the target channel (in the format @channelusername)
+  string chat_id = 2;
+
+  // Unique identifier for the target message thread (topic) of the forum; for forum supergroups only
+  int32 message_thread_id = 3;
+
+  // Text of the message to be sent, 1-4096 characters after entities parsing
+  string text = 4;
+
+  // Mode for parsing entities in the message text. See formatting options for more details
+  string parse_mode = 5;
+
+  // A list of special entities that appear in message text, which can be specified instead of parse_mode
+  repeated MessageEntity entities = 6;
+
+  // Link preview generation options for the message
+  LinkPreviewOptions link_preview_options = 7;
+
+  // Sends the message silently. Users will receive a notification with no sound
+  bool disable_notification = 8;
+
+  // Protects the contents of the sent message from forwarding and saving
+  bool protect_content = 9;
+
+  // Unique identifier of the message effect to be added to the message; for private chats only
+  string message_effect_id = 10;
+
+  // Description of the message to reply to
+  ReplyParameters reply_parameters = 11;
+
+  // Additional interface options. A serialized object for an inline keyboard, custom reply keyboard, instructions to remove a reply keyboard or to force a reply from the user
+  ReplyMarkup reply_markup = 12;
+}
+
+message SendChatAction {
+	string business_connection_id = 1;
+	string chat_id = 2;
+	int64 message_thread_id = 3;
+	string action = 4;
+}
+
+// Define messages for InlineKeyboardMarkup, ReplyKeyboardMarkup, ReplyKeyboardRemove, and ForceReply as required.
 message Message {
     int32 message_id = 1; // Unique message identifier inside this chat
 

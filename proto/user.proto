@@ -46,4 +46,3 @@ message User {
     // Optional. True, if the bot has a main Web App. Returned only in getMe.
     bool has_main_web_app = 13;
 }
-

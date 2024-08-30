@@ -194,10 +194,6 @@ message WebAppData {
     // Define the WebAppData fields here according to your schema
 }
 
-message InlineKeyboardMarkup {
-    // Define the InlineKeyboardMarkup fields here according to your schema
-}
-
 message MessageAutoDeleteTimerChanged {
     // Define the MessageAutoDeleteTimerChanged fields here according to your schema
 }
@@ -257,3 +253,25 @@ message ChatBoostUpdated {
 message ChatBoostRemoved {
     // 定义 ChatBoostRemoved 消息的字段
 }
+
+message InlineKeyboardMarkup {}
+message ReplyKeyboardMarkup {}
+message ReplyKeyboardRemove {}
+message ForceReply {}
+
+// Message representing reply parameters.
+message ReplyParameters {
+  // Add fields for ReplyParameters as required
+}
+
+// Message representing reply markup options.
+message ReplyMarkup {
+  // Oneof is used here to represent possible types of reply markup
+  oneof markup {
+    InlineKeyboardMarkup inline_keyboard = 1;
+    ReplyKeyboardMarkup reply_keyboard = 2;
+    ReplyKeyboardRemove remove_keyboard = 3;
+    ForceReply force_reply = 4;
+  }
+}
+

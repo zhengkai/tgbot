@@ -1844,44 +1844,6 @@ func (*WebAppData) Descriptor() ([]byte, []int) {
 	return file_misc_proto_rawDescGZIP(), []int{47}
 }
 
-type InlineKeyboardMarkup struct {
-	state         protoimpl.MessageState
-	sizeCache     protoimpl.SizeCache
-	unknownFields protoimpl.UnknownFields
-}
-
-func (x *InlineKeyboardMarkup) Reset() {
-	*x = InlineKeyboardMarkup{}
-	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[48]
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		ms.StoreMessageInfo(mi)
-	}
-}
-
-func (x *InlineKeyboardMarkup) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*InlineKeyboardMarkup) ProtoMessage() {}
-
-func (x *InlineKeyboardMarkup) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[48]
-	if protoimpl.UnsafeEnabled && x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use InlineKeyboardMarkup.ProtoReflect.Descriptor instead.
-func (*InlineKeyboardMarkup) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{48}
-}
-
 type MessageAutoDeleteTimerChanged struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -1891,7 +1853,7 @@ type MessageAutoDeleteTimerChanged struct {
 func (x *MessageAutoDeleteTimerChanged) Reset() {
 	*x = MessageAutoDeleteTimerChanged{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[49]
+		mi := &file_misc_proto_msgTypes[48]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1904,7 +1866,7 @@ func (x *MessageAutoDeleteTimerChanged) String() string {
 func (*MessageAutoDeleteTimerChanged) ProtoMessage() {}
 
 func (x *MessageAutoDeleteTimerChanged) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[49]
+	mi := &file_misc_proto_msgTypes[48]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1917,7 +1879,7 @@ func (x *MessageAutoDeleteTimerChanged) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MessageAutoDeleteTimerChanged.ProtoReflect.Descriptor instead.
 func (*MessageAutoDeleteTimerChanged) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{49}
+	return file_misc_proto_rawDescGZIP(), []int{48}
 }
 
 type BusinessConnection struct {
@@ -1929,7 +1891,7 @@ type BusinessConnection struct {
 func (x *BusinessConnection) Reset() {
 	*x = BusinessConnection{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[50]
+		mi := &file_misc_proto_msgTypes[49]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1942,7 +1904,7 @@ func (x *BusinessConnection) String() string {
 func (*BusinessConnection) ProtoMessage() {}
 
 func (x *BusinessConnection) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[50]
+	mi := &file_misc_proto_msgTypes[49]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1955,7 +1917,7 @@ func (x *BusinessConnection) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BusinessConnection.ProtoReflect.Descriptor instead.
 func (*BusinessConnection) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{50}
+	return file_misc_proto_rawDescGZIP(), []int{49}
 }
 
 type BusinessMessagesDeleted struct {
@@ -1967,7 +1929,7 @@ type BusinessMessagesDeleted struct {
 func (x *BusinessMessagesDeleted) Reset() {
 	*x = BusinessMessagesDeleted{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[51]
+		mi := &file_misc_proto_msgTypes[50]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1980,7 +1942,7 @@ func (x *BusinessMessagesDeleted) String() string {
 func (*BusinessMessagesDeleted) ProtoMessage() {}
 
 func (x *BusinessMessagesDeleted) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[51]
+	mi := &file_misc_proto_msgTypes[50]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1993,7 +1955,7 @@ func (x *BusinessMessagesDeleted) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BusinessMessagesDeleted.ProtoReflect.Descriptor instead.
 func (*BusinessMessagesDeleted) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{51}
+	return file_misc_proto_rawDescGZIP(), []int{50}
 }
 
 type MessageReactionUpdated struct {
@@ -2005,7 +1967,7 @@ type MessageReactionUpdated struct {
 func (x *MessageReactionUpdated) Reset() {
 	*x = MessageReactionUpdated{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[52]
+		mi := &file_misc_proto_msgTypes[51]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2018,7 +1980,7 @@ func (x *MessageReactionUpdated) String() string {
 func (*MessageReactionUpdated) ProtoMessage() {}
 
 func (x *MessageReactionUpdated) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[52]
+	mi := &file_misc_proto_msgTypes[51]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2031,7 +1993,7 @@ func (x *MessageReactionUpdated) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MessageReactionUpdated.ProtoReflect.Descriptor instead.
 func (*MessageReactionUpdated) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{52}
+	return file_misc_proto_rawDescGZIP(), []int{51}
 }
 
 type MessageReactionCountUpdated struct {
@@ -2043,7 +2005,7 @@ type MessageReactionCountUpdated struct {
 func (x *MessageReactionCountUpdated) Reset() {
 	*x = MessageReactionCountUpdated{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[53]
+		mi := &file_misc_proto_msgTypes[52]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2056,7 +2018,7 @@ func (x *MessageReactionCountUpdated) String() string {
 func (*MessageReactionCountUpdated) ProtoMessage() {}
 
 func (x *MessageReactionCountUpdated) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[53]
+	mi := &file_misc_proto_msgTypes[52]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2069,7 +2031,7 @@ func (x *MessageReactionCountUpdated) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MessageReactionCountUpdated.ProtoReflect.Descriptor instead.
 func (*MessageReactionCountUpdated) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{53}
+	return file_misc_proto_rawDescGZIP(), []int{52}
 }
 
 type InlineQuery struct {
@@ -2081,7 +2043,7 @@ type InlineQuery struct {
 func (x *InlineQuery) Reset() {
 	*x = InlineQuery{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[54]
+		mi := &file_misc_proto_msgTypes[53]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2094,7 +2056,7 @@ func (x *InlineQuery) String() string {
 func (*InlineQuery) ProtoMessage() {}
 
 func (x *InlineQuery) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[54]
+	mi := &file_misc_proto_msgTypes[53]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2107,7 +2069,7 @@ func (x *InlineQuery) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use InlineQuery.ProtoReflect.Descriptor instead.
 func (*InlineQuery) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{54}
+	return file_misc_proto_rawDescGZIP(), []int{53}
 }
 
 type ChosenInlineResult struct {
@@ -2119,7 +2081,7 @@ type ChosenInlineResult struct {
 func (x *ChosenInlineResult) Reset() {
 	*x = ChosenInlineResult{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[55]
+		mi := &file_misc_proto_msgTypes[54]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2132,7 +2094,7 @@ func (x *ChosenInlineResult) String() string {
 func (*ChosenInlineResult) ProtoMessage() {}
 
 func (x *ChosenInlineResult) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[55]
+	mi := &file_misc_proto_msgTypes[54]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2145,7 +2107,7 @@ func (x *ChosenInlineResult) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChosenInlineResult.ProtoReflect.Descriptor instead.
 func (*ChosenInlineResult) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{55}
+	return file_misc_proto_rawDescGZIP(), []int{54}
 }
 
 type CallbackQuery struct {
@@ -2157,7 +2119,7 @@ type CallbackQuery struct {
 func (x *CallbackQuery) Reset() {
 	*x = CallbackQuery{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[56]
+		mi := &file_misc_proto_msgTypes[55]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2170,7 +2132,7 @@ func (x *CallbackQuery) String() string {
 func (*CallbackQuery) ProtoMessage() {}
 
 func (x *CallbackQuery) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[56]
+	mi := &file_misc_proto_msgTypes[55]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2183,7 +2145,7 @@ func (x *CallbackQuery) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CallbackQuery.ProtoReflect.Descriptor instead.
 func (*CallbackQuery) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{56}
+	return file_misc_proto_rawDescGZIP(), []int{55}
 }
 
 type ShippingQuery struct {
@@ -2195,7 +2157,7 @@ type ShippingQuery struct {
 func (x *ShippingQuery) Reset() {
 	*x = ShippingQuery{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[57]
+		mi := &file_misc_proto_msgTypes[56]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2208,7 +2170,7 @@ func (x *ShippingQuery) String() string {
 func (*ShippingQuery) ProtoMessage() {}
 
 func (x *ShippingQuery) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[57]
+	mi := &file_misc_proto_msgTypes[56]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2221,7 +2183,7 @@ func (x *ShippingQuery) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ShippingQuery.ProtoReflect.Descriptor instead.
 func (*ShippingQuery) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{57}
+	return file_misc_proto_rawDescGZIP(), []int{56}
 }
 
 type PreCheckoutQuery struct {
@@ -2233,7 +2195,7 @@ type PreCheckoutQuery struct {
 func (x *PreCheckoutQuery) Reset() {
 	*x = PreCheckoutQuery{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[58]
+		mi := &file_misc_proto_msgTypes[57]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2246,7 +2208,7 @@ func (x *PreCheckoutQuery) String() string {
 func (*PreCheckoutQuery) ProtoMessage() {}
 
 func (x *PreCheckoutQuery) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[58]
+	mi := &file_misc_proto_msgTypes[57]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2259,7 +2221,7 @@ func (x *PreCheckoutQuery) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PreCheckoutQuery.ProtoReflect.Descriptor instead.
 func (*PreCheckoutQuery) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{58}
+	return file_misc_proto_rawDescGZIP(), []int{57}
 }
 
 type PollAnswer struct {
@@ -2271,7 +2233,7 @@ type PollAnswer struct {
 func (x *PollAnswer) Reset() {
 	*x = PollAnswer{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[59]
+		mi := &file_misc_proto_msgTypes[58]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2284,7 +2246,7 @@ func (x *PollAnswer) String() string {
 func (*PollAnswer) ProtoMessage() {}
 
 func (x *PollAnswer) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[59]
+	mi := &file_misc_proto_msgTypes[58]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2297,7 +2259,7 @@ func (x *PollAnswer) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PollAnswer.ProtoReflect.Descriptor instead.
 func (*PollAnswer) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{59}
+	return file_misc_proto_rawDescGZIP(), []int{58}
 }
 
 type ChatMemberUpdated struct {
@@ -2309,7 +2271,7 @@ type ChatMemberUpdated struct {
 func (x *ChatMemberUpdated) Reset() {
 	*x = ChatMemberUpdated{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[60]
+		mi := &file_misc_proto_msgTypes[59]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2322,7 +2284,7 @@ func (x *ChatMemberUpdated) String() string {
 func (*ChatMemberUpdated) ProtoMessage() {}
 
 func (x *ChatMemberUpdated) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[60]
+	mi := &file_misc_proto_msgTypes[59]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2335,7 +2297,7 @@ func (x *ChatMemberUpdated) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChatMemberUpdated.ProtoReflect.Descriptor instead.
 func (*ChatMemberUpdated) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{60}
+	return file_misc_proto_rawDescGZIP(), []int{59}
 }
 
 type ChatJoinRequest struct {
@@ -2347,7 +2309,7 @@ type ChatJoinRequest struct {
 func (x *ChatJoinRequest) Reset() {
 	*x = ChatJoinRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[61]
+		mi := &file_misc_proto_msgTypes[60]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2360,7 +2322,7 @@ func (x *ChatJoinRequest) String() string {
 func (*ChatJoinRequest) ProtoMessage() {}
 
 func (x *ChatJoinRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[61]
+	mi := &file_misc_proto_msgTypes[60]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2373,7 +2335,7 @@ func (x *ChatJoinRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChatJoinRequest.ProtoReflect.Descriptor instead.
 func (*ChatJoinRequest) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{61}
+	return file_misc_proto_rawDescGZIP(), []int{60}
 }
 
 type ChatBoostUpdated struct {
@@ -2385,7 +2347,7 @@ type ChatBoostUpdated struct {
 func (x *ChatBoostUpdated) Reset() {
 	*x = ChatBoostUpdated{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[62]
+		mi := &file_misc_proto_msgTypes[61]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2398,7 +2360,7 @@ func (x *ChatBoostUpdated) String() string {
 func (*ChatBoostUpdated) ProtoMessage() {}
 
 func (x *ChatBoostUpdated) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[62]
+	mi := &file_misc_proto_msgTypes[61]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2411,7 +2373,7 @@ func (x *ChatBoostUpdated) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChatBoostUpdated.ProtoReflect.Descriptor instead.
 func (*ChatBoostUpdated) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{62}
+	return file_misc_proto_rawDescGZIP(), []int{61}
 }
 
 type ChatBoostRemoved struct {
@@ -2423,7 +2385,7 @@ type ChatBoostRemoved struct {
 func (x *ChatBoostRemoved) Reset() {
 	*x = ChatBoostRemoved{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[63]
+		mi := &file_misc_proto_msgTypes[62]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2436,7 +2398,7 @@ func (x *ChatBoostRemoved) String() string {
 func (*ChatBoostRemoved) ProtoMessage() {}
 
 func (x *ChatBoostRemoved) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[63]
+	mi := &file_misc_proto_msgTypes[62]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2449,8 +2411,311 @@ func (x *ChatBoostRemoved) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChatBoostRemoved.ProtoReflect.Descriptor instead.
 func (*ChatBoostRemoved) Descriptor() ([]byte, []int) {
+	return file_misc_proto_rawDescGZIP(), []int{62}
+}
+
+type InlineKeyboardMarkup struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+}
+
+func (x *InlineKeyboardMarkup) Reset() {
+	*x = InlineKeyboardMarkup{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_misc_proto_msgTypes[63]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *InlineKeyboardMarkup) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*InlineKeyboardMarkup) ProtoMessage() {}
+
+func (x *InlineKeyboardMarkup) ProtoReflect() protoreflect.Message {
+	mi := &file_misc_proto_msgTypes[63]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use InlineKeyboardMarkup.ProtoReflect.Descriptor instead.
+func (*InlineKeyboardMarkup) Descriptor() ([]byte, []int) {
 	return file_misc_proto_rawDescGZIP(), []int{63}
 }
+
+type ReplyKeyboardMarkup struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+}
+
+func (x *ReplyKeyboardMarkup) Reset() {
+	*x = ReplyKeyboardMarkup{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_misc_proto_msgTypes[64]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *ReplyKeyboardMarkup) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*ReplyKeyboardMarkup) ProtoMessage() {}
+
+func (x *ReplyKeyboardMarkup) ProtoReflect() protoreflect.Message {
+	mi := &file_misc_proto_msgTypes[64]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use ReplyKeyboardMarkup.ProtoReflect.Descriptor instead.
+func (*ReplyKeyboardMarkup) Descriptor() ([]byte, []int) {
+	return file_misc_proto_rawDescGZIP(), []int{64}
+}
+
+type ReplyKeyboardRemove struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+}
+
+func (x *ReplyKeyboardRemove) Reset() {
+	*x = ReplyKeyboardRemove{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_misc_proto_msgTypes[65]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *ReplyKeyboardRemove) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*ReplyKeyboardRemove) ProtoMessage() {}
+
+func (x *ReplyKeyboardRemove) ProtoReflect() protoreflect.Message {
+	mi := &file_misc_proto_msgTypes[65]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use ReplyKeyboardRemove.ProtoReflect.Descriptor instead.
+func (*ReplyKeyboardRemove) Descriptor() ([]byte, []int) {
+	return file_misc_proto_rawDescGZIP(), []int{65}
+}
+
+type ForceReply struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+}
+
+func (x *ForceReply) Reset() {
+	*x = ForceReply{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_misc_proto_msgTypes[66]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *ForceReply) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*ForceReply) ProtoMessage() {}
+
+func (x *ForceReply) ProtoReflect() protoreflect.Message {
+	mi := &file_misc_proto_msgTypes[66]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use ForceReply.ProtoReflect.Descriptor instead.
+func (*ForceReply) Descriptor() ([]byte, []int) {
+	return file_misc_proto_rawDescGZIP(), []int{66}
+}
+
+// Message representing reply parameters.
+type ReplyParameters struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+}
+
+func (x *ReplyParameters) Reset() {
+	*x = ReplyParameters{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_misc_proto_msgTypes[67]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *ReplyParameters) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*ReplyParameters) ProtoMessage() {}
+
+func (x *ReplyParameters) ProtoReflect() protoreflect.Message {
+	mi := &file_misc_proto_msgTypes[67]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use ReplyParameters.ProtoReflect.Descriptor instead.
+func (*ReplyParameters) Descriptor() ([]byte, []int) {
+	return file_misc_proto_rawDescGZIP(), []int{67}
+}
+
+// Message representing reply markup options.
+type ReplyMarkup struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	// Oneof is used here to represent possible types of reply markup
+	//
+	// Types that are assignable to Markup:
+	//
+	//	*ReplyMarkup_InlineKeyboard
+	//	*ReplyMarkup_ReplyKeyboard
+	//	*ReplyMarkup_RemoveKeyboard
+	//	*ReplyMarkup_ForceReply
+	Markup isReplyMarkup_Markup `protobuf_oneof:"markup"`
+}
+
+func (x *ReplyMarkup) Reset() {
+	*x = ReplyMarkup{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_misc_proto_msgTypes[68]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *ReplyMarkup) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*ReplyMarkup) ProtoMessage() {}
+
+func (x *ReplyMarkup) ProtoReflect() protoreflect.Message {
+	mi := &file_misc_proto_msgTypes[68]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use ReplyMarkup.ProtoReflect.Descriptor instead.
+func (*ReplyMarkup) Descriptor() ([]byte, []int) {
+	return file_misc_proto_rawDescGZIP(), []int{68}
+}
+
+func (m *ReplyMarkup) GetMarkup() isReplyMarkup_Markup {
+	if m != nil {
+		return m.Markup
+	}
+	return nil
+}
+
+func (x *ReplyMarkup) GetInlineKeyboard() *InlineKeyboardMarkup {
+	if x, ok := x.GetMarkup().(*ReplyMarkup_InlineKeyboard); ok {
+		return x.InlineKeyboard
+	}
+	return nil
+}
+
+func (x *ReplyMarkup) GetReplyKeyboard() *ReplyKeyboardMarkup {
+	if x, ok := x.GetMarkup().(*ReplyMarkup_ReplyKeyboard); ok {
+		return x.ReplyKeyboard
+	}
+	return nil
+}
+
+func (x *ReplyMarkup) GetRemoveKeyboard() *ReplyKeyboardRemove {
+	if x, ok := x.GetMarkup().(*ReplyMarkup_RemoveKeyboard); ok {
+		return x.RemoveKeyboard
+	}
+	return nil
+}
+
+func (x *ReplyMarkup) GetForceReply() *ForceReply {
+	if x, ok := x.GetMarkup().(*ReplyMarkup_ForceReply); ok {
+		return x.ForceReply
+	}
+	return nil
+}
+
+type isReplyMarkup_Markup interface {
+	isReplyMarkup_Markup()
+}
+
+type ReplyMarkup_InlineKeyboard struct {
+	InlineKeyboard *InlineKeyboardMarkup `protobuf:"bytes,1,opt,name=inline_keyboard,json=inlineKeyboard,proto3,oneof"`
+}
+
+type ReplyMarkup_ReplyKeyboard struct {
+	ReplyKeyboard *ReplyKeyboardMarkup `protobuf:"bytes,2,opt,name=reply_keyboard,json=replyKeyboard,proto3,oneof"`
+}
+
+type ReplyMarkup_RemoveKeyboard struct {
+	RemoveKeyboard *ReplyKeyboardRemove `protobuf:"bytes,3,opt,name=remove_keyboard,json=removeKeyboard,proto3,oneof"`
+}
+
+type ReplyMarkup_ForceReply struct {
+	ForceReply *ForceReply `protobuf:"bytes,4,opt,name=force_reply,json=forceReply,proto3,oneof"`
+}
+
+func (*ReplyMarkup_InlineKeyboard) isReplyMarkup_Markup() {}
+
+func (*ReplyMarkup_ReplyKeyboard) isReplyMarkup_Markup() {}
+
+func (*ReplyMarkup_RemoveKeyboard) isReplyMarkup_Markup() {}
+
+func (*ReplyMarkup_ForceReply) isReplyMarkup_Markup() {}
 
 var File_misc_proto protoreflect.FileDescriptor
 
@@ -2505,30 +2770,52 @@ var file_misc_proto_rawDesc = []byte{
 	0x64, 0x65, 0x6f, 0x43, 0x68, 0x61, 0x74, 0x45, 0x6e, 0x64, 0x65, 0x64, 0x22, 0x1e, 0x0a, 0x1c,
 	0x56, 0x69, 0x64, 0x65, 0x6f, 0x43, 0x68, 0x61, 0x74, 0x50, 0x61, 0x72, 0x74, 0x69, 0x63, 0x69,
 	0x70, 0x61, 0x6e, 0x74, 0x73, 0x49, 0x6e, 0x76, 0x69, 0x74, 0x65, 0x64, 0x22, 0x0c, 0x0a, 0x0a,
-	0x57, 0x65, 0x62, 0x41, 0x70, 0x70, 0x44, 0x61, 0x74, 0x61, 0x22, 0x16, 0x0a, 0x14, 0x49, 0x6e,
-	0x6c, 0x69, 0x6e, 0x65, 0x4b, 0x65, 0x79, 0x62, 0x6f, 0x61, 0x72, 0x64, 0x4d, 0x61, 0x72, 0x6b,
-	0x75, 0x70, 0x22, 0x1f, 0x0a, 0x1d, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x41, 0x75, 0x74,
-	0x6f, 0x44, 0x65, 0x6c, 0x65, 0x74, 0x65, 0x54, 0x69, 0x6d, 0x65, 0x72, 0x43, 0x68, 0x61, 0x6e,
-	0x67, 0x65, 0x64, 0x22, 0x14, 0x0a, 0x12, 0x42, 0x75, 0x73, 0x69, 0x6e, 0x65, 0x73, 0x73, 0x43,
-	0x6f, 0x6e, 0x6e, 0x65, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x22, 0x19, 0x0a, 0x17, 0x42, 0x75, 0x73,
-	0x69, 0x6e, 0x65, 0x73, 0x73, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x73, 0x44, 0x65, 0x6c,
-	0x65, 0x74, 0x65, 0x64, 0x22, 0x18, 0x0a, 0x16, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x52,
-	0x65, 0x61, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x64, 0x22, 0x1d,
-	0x0a, 0x1b, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x52, 0x65, 0x61, 0x63, 0x74, 0x69, 0x6f,
-	0x6e, 0x43, 0x6f, 0x75, 0x6e, 0x74, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x64, 0x22, 0x0d, 0x0a,
-	0x0b, 0x49, 0x6e, 0x6c, 0x69, 0x6e, 0x65, 0x51, 0x75, 0x65, 0x72, 0x79, 0x22, 0x14, 0x0a, 0x12,
-	0x43, 0x68, 0x6f, 0x73, 0x65, 0x6e, 0x49, 0x6e, 0x6c, 0x69, 0x6e, 0x65, 0x52, 0x65, 0x73, 0x75,
-	0x6c, 0x74, 0x22, 0x0f, 0x0a, 0x0d, 0x43, 0x61, 0x6c, 0x6c, 0x62, 0x61, 0x63, 0x6b, 0x51, 0x75,
-	0x65, 0x72, 0x79, 0x22, 0x0f, 0x0a, 0x0d, 0x53, 0x68, 0x69, 0x70, 0x70, 0x69, 0x6e, 0x67, 0x51,
-	0x75, 0x65, 0x72, 0x79, 0x22, 0x12, 0x0a, 0x10, 0x50, 0x72, 0x65, 0x43, 0x68, 0x65, 0x63, 0x6b,
-	0x6f, 0x75, 0x74, 0x51, 0x75, 0x65, 0x72, 0x79, 0x22, 0x0c, 0x0a, 0x0a, 0x50, 0x6f, 0x6c, 0x6c,
-	0x41, 0x6e, 0x73, 0x77, 0x65, 0x72, 0x22, 0x13, 0x0a, 0x11, 0x43, 0x68, 0x61, 0x74, 0x4d, 0x65,
-	0x6d, 0x62, 0x65, 0x72, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x64, 0x22, 0x11, 0x0a, 0x0f, 0x43,
-	0x68, 0x61, 0x74, 0x4a, 0x6f, 0x69, 0x6e, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x22, 0x12,
-	0x0a, 0x10, 0x43, 0x68, 0x61, 0x74, 0x42, 0x6f, 0x6f, 0x73, 0x74, 0x55, 0x70, 0x64, 0x61, 0x74,
-	0x65, 0x64, 0x22, 0x12, 0x0a, 0x10, 0x43, 0x68, 0x61, 0x74, 0x42, 0x6f, 0x6f, 0x73, 0x74, 0x52,
-	0x65, 0x6d, 0x6f, 0x76, 0x65, 0x64, 0x42, 0x05, 0x5a, 0x03, 0x2f, 0x70, 0x62, 0x62, 0x06, 0x70,
-	0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x57, 0x65, 0x62, 0x41, 0x70, 0x70, 0x44, 0x61, 0x74, 0x61, 0x22, 0x1f, 0x0a, 0x1d, 0x4d, 0x65,
+	0x73, 0x73, 0x61, 0x67, 0x65, 0x41, 0x75, 0x74, 0x6f, 0x44, 0x65, 0x6c, 0x65, 0x74, 0x65, 0x54,
+	0x69, 0x6d, 0x65, 0x72, 0x43, 0x68, 0x61, 0x6e, 0x67, 0x65, 0x64, 0x22, 0x14, 0x0a, 0x12, 0x42,
+	0x75, 0x73, 0x69, 0x6e, 0x65, 0x73, 0x73, 0x43, 0x6f, 0x6e, 0x6e, 0x65, 0x63, 0x74, 0x69, 0x6f,
+	0x6e, 0x22, 0x19, 0x0a, 0x17, 0x42, 0x75, 0x73, 0x69, 0x6e, 0x65, 0x73, 0x73, 0x4d, 0x65, 0x73,
+	0x73, 0x61, 0x67, 0x65, 0x73, 0x44, 0x65, 0x6c, 0x65, 0x74, 0x65, 0x64, 0x22, 0x18, 0x0a, 0x16,
+	0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x52, 0x65, 0x61, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x55,
+	0x70, 0x64, 0x61, 0x74, 0x65, 0x64, 0x22, 0x1d, 0x0a, 0x1b, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67,
+	0x65, 0x52, 0x65, 0x61, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x43, 0x6f, 0x75, 0x6e, 0x74, 0x55, 0x70,
+	0x64, 0x61, 0x74, 0x65, 0x64, 0x22, 0x0d, 0x0a, 0x0b, 0x49, 0x6e, 0x6c, 0x69, 0x6e, 0x65, 0x51,
+	0x75, 0x65, 0x72, 0x79, 0x22, 0x14, 0x0a, 0x12, 0x43, 0x68, 0x6f, 0x73, 0x65, 0x6e, 0x49, 0x6e,
+	0x6c, 0x69, 0x6e, 0x65, 0x52, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x22, 0x0f, 0x0a, 0x0d, 0x43, 0x61,
+	0x6c, 0x6c, 0x62, 0x61, 0x63, 0x6b, 0x51, 0x75, 0x65, 0x72, 0x79, 0x22, 0x0f, 0x0a, 0x0d, 0x53,
+	0x68, 0x69, 0x70, 0x70, 0x69, 0x6e, 0x67, 0x51, 0x75, 0x65, 0x72, 0x79, 0x22, 0x12, 0x0a, 0x10,
+	0x50, 0x72, 0x65, 0x43, 0x68, 0x65, 0x63, 0x6b, 0x6f, 0x75, 0x74, 0x51, 0x75, 0x65, 0x72, 0x79,
+	0x22, 0x0c, 0x0a, 0x0a, 0x50, 0x6f, 0x6c, 0x6c, 0x41, 0x6e, 0x73, 0x77, 0x65, 0x72, 0x22, 0x13,
+	0x0a, 0x11, 0x43, 0x68, 0x61, 0x74, 0x4d, 0x65, 0x6d, 0x62, 0x65, 0x72, 0x55, 0x70, 0x64, 0x61,
+	0x74, 0x65, 0x64, 0x22, 0x11, 0x0a, 0x0f, 0x43, 0x68, 0x61, 0x74, 0x4a, 0x6f, 0x69, 0x6e, 0x52,
+	0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x22, 0x12, 0x0a, 0x10, 0x43, 0x68, 0x61, 0x74, 0x42, 0x6f,
+	0x6f, 0x73, 0x74, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x64, 0x22, 0x12, 0x0a, 0x10, 0x43, 0x68,
+	0x61, 0x74, 0x42, 0x6f, 0x6f, 0x73, 0x74, 0x52, 0x65, 0x6d, 0x6f, 0x76, 0x65, 0x64, 0x22, 0x16,
+	0x0a, 0x14, 0x49, 0x6e, 0x6c, 0x69, 0x6e, 0x65, 0x4b, 0x65, 0x79, 0x62, 0x6f, 0x61, 0x72, 0x64,
+	0x4d, 0x61, 0x72, 0x6b, 0x75, 0x70, 0x22, 0x15, 0x0a, 0x13, 0x52, 0x65, 0x70, 0x6c, 0x79, 0x4b,
+	0x65, 0x79, 0x62, 0x6f, 0x61, 0x72, 0x64, 0x4d, 0x61, 0x72, 0x6b, 0x75, 0x70, 0x22, 0x15, 0x0a,
+	0x13, 0x52, 0x65, 0x70, 0x6c, 0x79, 0x4b, 0x65, 0x79, 0x62, 0x6f, 0x61, 0x72, 0x64, 0x52, 0x65,
+	0x6d, 0x6f, 0x76, 0x65, 0x22, 0x0c, 0x0a, 0x0a, 0x46, 0x6f, 0x72, 0x63, 0x65, 0x52, 0x65, 0x70,
+	0x6c, 0x79, 0x22, 0x11, 0x0a, 0x0f, 0x52, 0x65, 0x70, 0x6c, 0x79, 0x50, 0x61, 0x72, 0x61, 0x6d,
+	0x65, 0x74, 0x65, 0x72, 0x73, 0x22, 0x95, 0x02, 0x0a, 0x0b, 0x52, 0x65, 0x70, 0x6c, 0x79, 0x4d,
+	0x61, 0x72, 0x6b, 0x75, 0x70, 0x12, 0x43, 0x0a, 0x0f, 0x69, 0x6e, 0x6c, 0x69, 0x6e, 0x65, 0x5f,
+	0x6b, 0x65, 0x79, 0x62, 0x6f, 0x61, 0x72, 0x64, 0x18, 0x01, 0x20, 0x01, 0x28, 0x0b, 0x32, 0x18,
+	0x2e, 0x70, 0x62, 0x2e, 0x49, 0x6e, 0x6c, 0x69, 0x6e, 0x65, 0x4b, 0x65, 0x79, 0x62, 0x6f, 0x61,
+	0x72, 0x64, 0x4d, 0x61, 0x72, 0x6b, 0x75, 0x70, 0x48, 0x00, 0x52, 0x0e, 0x69, 0x6e, 0x6c, 0x69,
+	0x6e, 0x65, 0x4b, 0x65, 0x79, 0x62, 0x6f, 0x61, 0x72, 0x64, 0x12, 0x40, 0x0a, 0x0e, 0x72, 0x65,
+	0x70, 0x6c, 0x79, 0x5f, 0x6b, 0x65, 0x79, 0x62, 0x6f, 0x61, 0x72, 0x64, 0x18, 0x02, 0x20, 0x01,
+	0x28, 0x0b, 0x32, 0x17, 0x2e, 0x70, 0x62, 0x2e, 0x52, 0x65, 0x70, 0x6c, 0x79, 0x4b, 0x65, 0x79,
+	0x62, 0x6f, 0x61, 0x72, 0x64, 0x4d, 0x61, 0x72, 0x6b, 0x75, 0x70, 0x48, 0x00, 0x52, 0x0d, 0x72,
+	0x65, 0x70, 0x6c, 0x79, 0x4b, 0x65, 0x79, 0x62, 0x6f, 0x61, 0x72, 0x64, 0x12, 0x42, 0x0a, 0x0f,
+	0x72, 0x65, 0x6d, 0x6f, 0x76, 0x65, 0x5f, 0x6b, 0x65, 0x79, 0x62, 0x6f, 0x61, 0x72, 0x64, 0x18,
+	0x03, 0x20, 0x01, 0x28, 0x0b, 0x32, 0x17, 0x2e, 0x70, 0x62, 0x2e, 0x52, 0x65, 0x70, 0x6c, 0x79,
+	0x4b, 0x65, 0x79, 0x62, 0x6f, 0x61, 0x72, 0x64, 0x52, 0x65, 0x6d, 0x6f, 0x76, 0x65, 0x48, 0x00,
+	0x52, 0x0e, 0x72, 0x65, 0x6d, 0x6f, 0x76, 0x65, 0x4b, 0x65, 0x79, 0x62, 0x6f, 0x61, 0x72, 0x64,
+	0x12, 0x31, 0x0a, 0x0b, 0x66, 0x6f, 0x72, 0x63, 0x65, 0x5f, 0x72, 0x65, 0x70, 0x6c, 0x79, 0x18,
+	0x04, 0x20, 0x01, 0x28, 0x0b, 0x32, 0x0e, 0x2e, 0x70, 0x62, 0x2e, 0x46, 0x6f, 0x72, 0x63, 0x65,
+	0x52, 0x65, 0x70, 0x6c, 0x79, 0x48, 0x00, 0x52, 0x0a, 0x66, 0x6f, 0x72, 0x63, 0x65, 0x52, 0x65,
+	0x70, 0x6c, 0x79, 0x42, 0x08, 0x0a, 0x06, 0x6d, 0x61, 0x72, 0x6b, 0x75, 0x70, 0x42, 0x05, 0x5a,
+	0x03, 0x2f, 0x70, 0x62, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -2543,7 +2830,7 @@ func file_misc_proto_rawDescGZIP() []byte {
 	return file_misc_proto_rawDescData
 }
 
-var file_misc_proto_msgTypes = make([]protoimpl.MessageInfo, 64)
+var file_misc_proto_msgTypes = make([]protoimpl.MessageInfo, 69)
 var file_misc_proto_goTypes = []any{
 	(*Chat)(nil),                          // 0: pb.Chat
 	(*MessageOrigin)(nil),                 // 1: pb.MessageOrigin
@@ -2593,29 +2880,38 @@ var file_misc_proto_goTypes = []any{
 	(*VideoChatEnded)(nil),                // 45: pb.VideoChatEnded
 	(*VideoChatParticipantsInvited)(nil),  // 46: pb.VideoChatParticipantsInvited
 	(*WebAppData)(nil),                    // 47: pb.WebAppData
-	(*InlineKeyboardMarkup)(nil),          // 48: pb.InlineKeyboardMarkup
-	(*MessageAutoDeleteTimerChanged)(nil), // 49: pb.MessageAutoDeleteTimerChanged
-	(*BusinessConnection)(nil),            // 50: pb.BusinessConnection
-	(*BusinessMessagesDeleted)(nil),       // 51: pb.BusinessMessagesDeleted
-	(*MessageReactionUpdated)(nil),        // 52: pb.MessageReactionUpdated
-	(*MessageReactionCountUpdated)(nil),   // 53: pb.MessageReactionCountUpdated
-	(*InlineQuery)(nil),                   // 54: pb.InlineQuery
-	(*ChosenInlineResult)(nil),            // 55: pb.ChosenInlineResult
-	(*CallbackQuery)(nil),                 // 56: pb.CallbackQuery
-	(*ShippingQuery)(nil),                 // 57: pb.ShippingQuery
-	(*PreCheckoutQuery)(nil),              // 58: pb.PreCheckoutQuery
-	(*PollAnswer)(nil),                    // 59: pb.PollAnswer
-	(*ChatMemberUpdated)(nil),             // 60: pb.ChatMemberUpdated
-	(*ChatJoinRequest)(nil),               // 61: pb.ChatJoinRequest
-	(*ChatBoostUpdated)(nil),              // 62: pb.ChatBoostUpdated
-	(*ChatBoostRemoved)(nil),              // 63: pb.ChatBoostRemoved
+	(*MessageAutoDeleteTimerChanged)(nil), // 48: pb.MessageAutoDeleteTimerChanged
+	(*BusinessConnection)(nil),            // 49: pb.BusinessConnection
+	(*BusinessMessagesDeleted)(nil),       // 50: pb.BusinessMessagesDeleted
+	(*MessageReactionUpdated)(nil),        // 51: pb.MessageReactionUpdated
+	(*MessageReactionCountUpdated)(nil),   // 52: pb.MessageReactionCountUpdated
+	(*InlineQuery)(nil),                   // 53: pb.InlineQuery
+	(*ChosenInlineResult)(nil),            // 54: pb.ChosenInlineResult
+	(*CallbackQuery)(nil),                 // 55: pb.CallbackQuery
+	(*ShippingQuery)(nil),                 // 56: pb.ShippingQuery
+	(*PreCheckoutQuery)(nil),              // 57: pb.PreCheckoutQuery
+	(*PollAnswer)(nil),                    // 58: pb.PollAnswer
+	(*ChatMemberUpdated)(nil),             // 59: pb.ChatMemberUpdated
+	(*ChatJoinRequest)(nil),               // 60: pb.ChatJoinRequest
+	(*ChatBoostUpdated)(nil),              // 61: pb.ChatBoostUpdated
+	(*ChatBoostRemoved)(nil),              // 62: pb.ChatBoostRemoved
+	(*InlineKeyboardMarkup)(nil),          // 63: pb.InlineKeyboardMarkup
+	(*ReplyKeyboardMarkup)(nil),           // 64: pb.ReplyKeyboardMarkup
+	(*ReplyKeyboardRemove)(nil),           // 65: pb.ReplyKeyboardRemove
+	(*ForceReply)(nil),                    // 66: pb.ForceReply
+	(*ReplyParameters)(nil),               // 67: pb.ReplyParameters
+	(*ReplyMarkup)(nil),                   // 68: pb.ReplyMarkup
 }
 var file_misc_proto_depIdxs = []int32{
-	0, // [0:0] is the sub-list for method output_type
-	0, // [0:0] is the sub-list for method input_type
-	0, // [0:0] is the sub-list for extension type_name
-	0, // [0:0] is the sub-list for extension extendee
-	0, // [0:0] is the sub-list for field type_name
+	63, // 0: pb.ReplyMarkup.inline_keyboard:type_name -> pb.InlineKeyboardMarkup
+	64, // 1: pb.ReplyMarkup.reply_keyboard:type_name -> pb.ReplyKeyboardMarkup
+	65, // 2: pb.ReplyMarkup.remove_keyboard:type_name -> pb.ReplyKeyboardRemove
+	66, // 3: pb.ReplyMarkup.force_reply:type_name -> pb.ForceReply
+	4,  // [4:4] is the sub-list for method output_type
+	4,  // [4:4] is the sub-list for method input_type
+	4,  // [4:4] is the sub-list for extension type_name
+	4,  // [4:4] is the sub-list for extension extendee
+	0,  // [0:4] is the sub-list for field type_name
 }
 
 func init() { file_misc_proto_init() }
@@ -3201,18 +3497,6 @@ func file_misc_proto_init() {
 			}
 		}
 		file_misc_proto_msgTypes[48].Exporter = func(v any, i int) any {
-			switch v := v.(*InlineKeyboardMarkup); i {
-			case 0:
-				return &v.state
-			case 1:
-				return &v.sizeCache
-			case 2:
-				return &v.unknownFields
-			default:
-				return nil
-			}
-		}
-		file_misc_proto_msgTypes[49].Exporter = func(v any, i int) any {
 			switch v := v.(*MessageAutoDeleteTimerChanged); i {
 			case 0:
 				return &v.state
@@ -3224,7 +3508,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[50].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[49].Exporter = func(v any, i int) any {
 			switch v := v.(*BusinessConnection); i {
 			case 0:
 				return &v.state
@@ -3236,7 +3520,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[51].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[50].Exporter = func(v any, i int) any {
 			switch v := v.(*BusinessMessagesDeleted); i {
 			case 0:
 				return &v.state
@@ -3248,7 +3532,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[52].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[51].Exporter = func(v any, i int) any {
 			switch v := v.(*MessageReactionUpdated); i {
 			case 0:
 				return &v.state
@@ -3260,7 +3544,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[53].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[52].Exporter = func(v any, i int) any {
 			switch v := v.(*MessageReactionCountUpdated); i {
 			case 0:
 				return &v.state
@@ -3272,7 +3556,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[54].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[53].Exporter = func(v any, i int) any {
 			switch v := v.(*InlineQuery); i {
 			case 0:
 				return &v.state
@@ -3284,7 +3568,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[55].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[54].Exporter = func(v any, i int) any {
 			switch v := v.(*ChosenInlineResult); i {
 			case 0:
 				return &v.state
@@ -3296,7 +3580,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[56].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[55].Exporter = func(v any, i int) any {
 			switch v := v.(*CallbackQuery); i {
 			case 0:
 				return &v.state
@@ -3308,7 +3592,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[57].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[56].Exporter = func(v any, i int) any {
 			switch v := v.(*ShippingQuery); i {
 			case 0:
 				return &v.state
@@ -3320,7 +3604,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[58].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[57].Exporter = func(v any, i int) any {
 			switch v := v.(*PreCheckoutQuery); i {
 			case 0:
 				return &v.state
@@ -3332,7 +3616,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[59].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[58].Exporter = func(v any, i int) any {
 			switch v := v.(*PollAnswer); i {
 			case 0:
 				return &v.state
@@ -3344,7 +3628,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[60].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[59].Exporter = func(v any, i int) any {
 			switch v := v.(*ChatMemberUpdated); i {
 			case 0:
 				return &v.state
@@ -3356,7 +3640,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[61].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[60].Exporter = func(v any, i int) any {
 			switch v := v.(*ChatJoinRequest); i {
 			case 0:
 				return &v.state
@@ -3368,7 +3652,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[62].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[61].Exporter = func(v any, i int) any {
 			switch v := v.(*ChatBoostUpdated); i {
 			case 0:
 				return &v.state
@@ -3380,7 +3664,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[63].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[62].Exporter = func(v any, i int) any {
 			switch v := v.(*ChatBoostRemoved); i {
 			case 0:
 				return &v.state
@@ -3392,6 +3676,84 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
+		file_misc_proto_msgTypes[63].Exporter = func(v any, i int) any {
+			switch v := v.(*InlineKeyboardMarkup); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_misc_proto_msgTypes[64].Exporter = func(v any, i int) any {
+			switch v := v.(*ReplyKeyboardMarkup); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_misc_proto_msgTypes[65].Exporter = func(v any, i int) any {
+			switch v := v.(*ReplyKeyboardRemove); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_misc_proto_msgTypes[66].Exporter = func(v any, i int) any {
+			switch v := v.(*ForceReply); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_misc_proto_msgTypes[67].Exporter = func(v any, i int) any {
+			switch v := v.(*ReplyParameters); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_misc_proto_msgTypes[68].Exporter = func(v any, i int) any {
+			switch v := v.(*ReplyMarkup); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+	}
+	file_misc_proto_msgTypes[68].OneofWrappers = []any{
+		(*ReplyMarkup_InlineKeyboard)(nil),
+		(*ReplyMarkup_ReplyKeyboard)(nil),
+		(*ReplyMarkup_RemoveKeyboard)(nil),
+		(*ReplyMarkup_ForceReply)(nil),
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
@@ -3399,7 +3761,7 @@ func file_misc_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_misc_proto_rawDesc,
 			NumEnums:      0,
-			NumMessages:   64,
+			NumMessages:   69,
 			NumExtensions: 0,
 			NumServices:   0,
 		},

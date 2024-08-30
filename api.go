@@ -29,12 +29,12 @@ func (a *api) GetMe() (*pb.User, error) {
 	return d, nil
 }
 
-func (a *api) GetUpdates(offset int) ([]*pb.Update, error) {
+func (a *api) GetUpdates(offset int64) ([]*pb.Update, error) {
 
 	url := a.urlBase + `getUpdates`
 
 	if offset > 0 {
-		url += fmt.Sprintf(`?offset=%d`, offset)
+		url += fmt.Sprintf(`?offset=%d&timeout=60`, offset)
 	}
 
 	d := []*pb.Update{}
@@ -44,4 +44,19 @@ func (a *api) GetUpdates(offset int) ([]*pb.Update, error) {
 	}
 
 	return d, nil
+}
+
+func (a *api) SendChatAction(m *pb.SendChatAction) {
+	url := a.urlBase + `sendChatAction`
+	httpPostJSON(url, m, nil)
+}
+
+func (a *api) SendMessage(m *pb.SendMessage) (*pb.Message, error) {
+	url := a.urlBase + `sendMessage`
+
+	re := &pb.Message{}
+
+	err := httpPostJSON(url, m, re)
+
+	return nil, err
 }
