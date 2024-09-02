@@ -1,0 +1,30 @@
+syntax = "proto3";
+option go_package = "/pb";
+package pb;
+
+// https://core.telegram.org/bots/api#document
+message Document {
+	string file_id = 1;
+	string file_unique_id = 2;
+	PhotoSize thumbnail = 3;
+	string file_name = 4;
+	string mime_type = 5;
+	uint64 file_size = 6;
+}
+
+// https://core.telegram.org/bots/api#photosize
+message PhotoSize {
+	string file_id = 1;
+	string file_unique_id = 2;
+	uint32 width = 3;
+	uint32 height = 4;
+	uint64 file_size = 5;
+}
+
+// https://core.telegram.org/bots/api#file
+message File {
+	string file_id = 1;
+	string file_unique_id = 2;
+	uint64 file_size = 3;
+	string file_path = 4;
+}

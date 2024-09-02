@@ -12,7 +12,7 @@ message Update {
     // repeated updates or to restore the correct update sequence, should they
     // get out of order. If there are no new updates for at least a week, then
     // the identifier of the next update will be chosen randomly instead of sequentially.
-    int64 update_id = 1;
+    uint64 update_id = 1;
 
     // Optional. New incoming message of any kind - text, photo, sticker, etc.
     Message message = 2;

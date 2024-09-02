@@ -41,10 +41,13 @@ func httpGetJSON(url string, d any) error {
 		return err
 	}
 
+	fmt.Println(url, len(ab))
+
 	// fmt.Println(string(ab))
 
 	ok, err := jp.GetBoolean(ab, `ok`)
 	if !ok {
+		fmt.Println(string(ab))
 		return errors.New(`api fail: no "ok:true"`)
 	}
 
@@ -100,4 +103,8 @@ func httpPostJSON(url string, d proto.Message, re proto.Message) error {
 	}
 
 	return json.Unmarshal(ab, re)
+}
+
+func httpFetch(url string, w io.Writer) error {
+	return nil
 }

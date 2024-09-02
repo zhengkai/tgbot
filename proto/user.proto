@@ -7,7 +7,7 @@ message User {
     // significant bits and some programming languages may have difficulty/silent
     // defects in interpreting it. But it has at most 52 significant bits, so a
     // 64-bit integer or double-precision float type are safe for storing this identifier.
-    int64 id = 1;
+    uint64 id = 1;
 
     // True, if this user is a bot.
     bool is_bot = 2;

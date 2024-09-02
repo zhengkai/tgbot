@@ -1,0 +1,12 @@
+syntax = "proto3";
+option go_package = "/pb";
+package pb;
+
+
+message Chat {
+	uint64 id = 1;
+	string first_name = 2;
+	string last_name = 3;
+	string username = 4;
+	string type = 5;
+}

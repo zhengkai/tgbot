@@ -2,10 +2,6 @@ syntax = "proto3";
 option go_package = "/pb";
 package pb;
 
-message Chat {
-    // Define the Chat fields here according to your schema
-}
-
 message MessageOrigin {
     // Define the MessageOrigin fields here according to your schema
 }
@@ -30,16 +26,8 @@ message Audio {
     // Define the Audio fields here according to your schema
 }
 
-message Document {
-    // Define the Document fields here according to your schema
-}
-
 message PaidMediaInfo {
     // Define the PaidMediaInfo fields here according to your schema
-}
-
-message PhotoSize {
-    // Define the PhotoSize fields here according to your schema
 }
 
 message Sticker {

@@ -29,7 +29,7 @@ func (a *api) GetMe() (*pb.User, error) {
 	return d, nil
 }
 
-func (a *api) GetUpdates(offset int64) ([]*pb.Update, error) {
+func (a *api) GetUpdates(offset uint64) ([]*pb.Update, error) {
 
 	url := a.urlBase + `getUpdates`
 
