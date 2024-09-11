@@ -742,44 +742,6 @@ func (*Location) Descriptor() ([]byte, []int) {
 	return file_misc_proto_rawDescGZIP(), []int{18}
 }
 
-type MaybeInaccessibleMessage struct {
-	state         protoimpl.MessageState
-	sizeCache     protoimpl.SizeCache
-	unknownFields protoimpl.UnknownFields
-}
-
-func (x *MaybeInaccessibleMessage) Reset() {
-	*x = MaybeInaccessibleMessage{}
-	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[19]
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		ms.StoreMessageInfo(mi)
-	}
-}
-
-func (x *MaybeInaccessibleMessage) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*MaybeInaccessibleMessage) ProtoMessage() {}
-
-func (x *MaybeInaccessibleMessage) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[19]
-	if protoimpl.UnsafeEnabled && x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use MaybeInaccessibleMessage.ProtoReflect.Descriptor instead.
-func (*MaybeInaccessibleMessage) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{19}
-}
-
 type Invoice struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -789,7 +751,7 @@ type Invoice struct {
 func (x *Invoice) Reset() {
 	*x = Invoice{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[20]
+		mi := &file_misc_proto_msgTypes[19]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -802,7 +764,7 @@ func (x *Invoice) String() string {
 func (*Invoice) ProtoMessage() {}
 
 func (x *Invoice) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[20]
+	mi := &file_misc_proto_msgTypes[19]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -815,7 +777,7 @@ func (x *Invoice) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Invoice.ProtoReflect.Descriptor instead.
 func (*Invoice) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{20}
+	return file_misc_proto_rawDescGZIP(), []int{19}
 }
 
 type SuccessfulPayment struct {
@@ -827,7 +789,7 @@ type SuccessfulPayment struct {
 func (x *SuccessfulPayment) Reset() {
 	*x = SuccessfulPayment{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[21]
+		mi := &file_misc_proto_msgTypes[20]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -840,7 +802,7 @@ func (x *SuccessfulPayment) String() string {
 func (*SuccessfulPayment) ProtoMessage() {}
 
 func (x *SuccessfulPayment) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[21]
+	mi := &file_misc_proto_msgTypes[20]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -853,7 +815,7 @@ func (x *SuccessfulPayment) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SuccessfulPayment.ProtoReflect.Descriptor instead.
 func (*SuccessfulPayment) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{21}
+	return file_misc_proto_rawDescGZIP(), []int{20}
 }
 
 type RefundedPayment struct {
@@ -865,7 +827,7 @@ type RefundedPayment struct {
 func (x *RefundedPayment) Reset() {
 	*x = RefundedPayment{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[22]
+		mi := &file_misc_proto_msgTypes[21]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -878,7 +840,7 @@ func (x *RefundedPayment) String() string {
 func (*RefundedPayment) ProtoMessage() {}
 
 func (x *RefundedPayment) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[22]
+	mi := &file_misc_proto_msgTypes[21]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -891,7 +853,7 @@ func (x *RefundedPayment) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RefundedPayment.ProtoReflect.Descriptor instead.
 func (*RefundedPayment) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{22}
+	return file_misc_proto_rawDescGZIP(), []int{21}
 }
 
 type UsersShared struct {
@@ -903,7 +865,7 @@ type UsersShared struct {
 func (x *UsersShared) Reset() {
 	*x = UsersShared{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[23]
+		mi := &file_misc_proto_msgTypes[22]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -916,7 +878,7 @@ func (x *UsersShared) String() string {
 func (*UsersShared) ProtoMessage() {}
 
 func (x *UsersShared) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[23]
+	mi := &file_misc_proto_msgTypes[22]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -929,7 +891,7 @@ func (x *UsersShared) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UsersShared.ProtoReflect.Descriptor instead.
 func (*UsersShared) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{23}
+	return file_misc_proto_rawDescGZIP(), []int{22}
 }
 
 type ChatShared struct {
@@ -941,7 +903,7 @@ type ChatShared struct {
 func (x *ChatShared) Reset() {
 	*x = ChatShared{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[24]
+		mi := &file_misc_proto_msgTypes[23]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -954,7 +916,7 @@ func (x *ChatShared) String() string {
 func (*ChatShared) ProtoMessage() {}
 
 func (x *ChatShared) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[24]
+	mi := &file_misc_proto_msgTypes[23]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -967,7 +929,7 @@ func (x *ChatShared) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChatShared.ProtoReflect.Descriptor instead.
 func (*ChatShared) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{24}
+	return file_misc_proto_rawDescGZIP(), []int{23}
 }
 
 type WriteAccessAllowed struct {
@@ -979,7 +941,7 @@ type WriteAccessAllowed struct {
 func (x *WriteAccessAllowed) Reset() {
 	*x = WriteAccessAllowed{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[25]
+		mi := &file_misc_proto_msgTypes[24]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -992,7 +954,7 @@ func (x *WriteAccessAllowed) String() string {
 func (*WriteAccessAllowed) ProtoMessage() {}
 
 func (x *WriteAccessAllowed) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[25]
+	mi := &file_misc_proto_msgTypes[24]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1005,7 +967,7 @@ func (x *WriteAccessAllowed) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use WriteAccessAllowed.ProtoReflect.Descriptor instead.
 func (*WriteAccessAllowed) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{25}
+	return file_misc_proto_rawDescGZIP(), []int{24}
 }
 
 type PassportData struct {
@@ -1017,7 +979,7 @@ type PassportData struct {
 func (x *PassportData) Reset() {
 	*x = PassportData{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[26]
+		mi := &file_misc_proto_msgTypes[25]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1030,7 +992,7 @@ func (x *PassportData) String() string {
 func (*PassportData) ProtoMessage() {}
 
 func (x *PassportData) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[26]
+	mi := &file_misc_proto_msgTypes[25]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1043,7 +1005,7 @@ func (x *PassportData) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PassportData.ProtoReflect.Descriptor instead.
 func (*PassportData) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{26}
+	return file_misc_proto_rawDescGZIP(), []int{25}
 }
 
 type ProximityAlertTriggered struct {
@@ -1055,7 +1017,7 @@ type ProximityAlertTriggered struct {
 func (x *ProximityAlertTriggered) Reset() {
 	*x = ProximityAlertTriggered{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[27]
+		mi := &file_misc_proto_msgTypes[26]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1068,7 +1030,7 @@ func (x *ProximityAlertTriggered) String() string {
 func (*ProximityAlertTriggered) ProtoMessage() {}
 
 func (x *ProximityAlertTriggered) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[27]
+	mi := &file_misc_proto_msgTypes[26]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1081,7 +1043,7 @@ func (x *ProximityAlertTriggered) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ProximityAlertTriggered.ProtoReflect.Descriptor instead.
 func (*ProximityAlertTriggered) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{27}
+	return file_misc_proto_rawDescGZIP(), []int{26}
 }
 
 type ChatBoostAdded struct {
@@ -1093,7 +1055,7 @@ type ChatBoostAdded struct {
 func (x *ChatBoostAdded) Reset() {
 	*x = ChatBoostAdded{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[28]
+		mi := &file_misc_proto_msgTypes[27]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1106,7 +1068,7 @@ func (x *ChatBoostAdded) String() string {
 func (*ChatBoostAdded) ProtoMessage() {}
 
 func (x *ChatBoostAdded) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[28]
+	mi := &file_misc_proto_msgTypes[27]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1119,7 +1081,7 @@ func (x *ChatBoostAdded) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChatBoostAdded.ProtoReflect.Descriptor instead.
 func (*ChatBoostAdded) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{28}
+	return file_misc_proto_rawDescGZIP(), []int{27}
 }
 
 type ChatBackground struct {
@@ -1131,7 +1093,7 @@ type ChatBackground struct {
 func (x *ChatBackground) Reset() {
 	*x = ChatBackground{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[29]
+		mi := &file_misc_proto_msgTypes[28]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1144,7 +1106,7 @@ func (x *ChatBackground) String() string {
 func (*ChatBackground) ProtoMessage() {}
 
 func (x *ChatBackground) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[29]
+	mi := &file_misc_proto_msgTypes[28]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1157,7 +1119,7 @@ func (x *ChatBackground) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChatBackground.ProtoReflect.Descriptor instead.
 func (*ChatBackground) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{29}
+	return file_misc_proto_rawDescGZIP(), []int{28}
 }
 
 type ForumTopicCreated struct {
@@ -1169,7 +1131,7 @@ type ForumTopicCreated struct {
 func (x *ForumTopicCreated) Reset() {
 	*x = ForumTopicCreated{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[30]
+		mi := &file_misc_proto_msgTypes[29]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1182,7 +1144,7 @@ func (x *ForumTopicCreated) String() string {
 func (*ForumTopicCreated) ProtoMessage() {}
 
 func (x *ForumTopicCreated) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[30]
+	mi := &file_misc_proto_msgTypes[29]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1195,7 +1157,7 @@ func (x *ForumTopicCreated) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ForumTopicCreated.ProtoReflect.Descriptor instead.
 func (*ForumTopicCreated) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{30}
+	return file_misc_proto_rawDescGZIP(), []int{29}
 }
 
 type ForumTopicEdited struct {
@@ -1207,7 +1169,7 @@ type ForumTopicEdited struct {
 func (x *ForumTopicEdited) Reset() {
 	*x = ForumTopicEdited{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[31]
+		mi := &file_misc_proto_msgTypes[30]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1220,7 +1182,7 @@ func (x *ForumTopicEdited) String() string {
 func (*ForumTopicEdited) ProtoMessage() {}
 
 func (x *ForumTopicEdited) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[31]
+	mi := &file_misc_proto_msgTypes[30]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1233,7 +1195,7 @@ func (x *ForumTopicEdited) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ForumTopicEdited.ProtoReflect.Descriptor instead.
 func (*ForumTopicEdited) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{31}
+	return file_misc_proto_rawDescGZIP(), []int{30}
 }
 
 type ForumTopicClosed struct {
@@ -1245,7 +1207,7 @@ type ForumTopicClosed struct {
 func (x *ForumTopicClosed) Reset() {
 	*x = ForumTopicClosed{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[32]
+		mi := &file_misc_proto_msgTypes[31]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1258,7 +1220,7 @@ func (x *ForumTopicClosed) String() string {
 func (*ForumTopicClosed) ProtoMessage() {}
 
 func (x *ForumTopicClosed) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[32]
+	mi := &file_misc_proto_msgTypes[31]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1271,7 +1233,7 @@ func (x *ForumTopicClosed) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ForumTopicClosed.ProtoReflect.Descriptor instead.
 func (*ForumTopicClosed) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{32}
+	return file_misc_proto_rawDescGZIP(), []int{31}
 }
 
 type ForumTopicReopened struct {
@@ -1283,7 +1245,7 @@ type ForumTopicReopened struct {
 func (x *ForumTopicReopened) Reset() {
 	*x = ForumTopicReopened{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[33]
+		mi := &file_misc_proto_msgTypes[32]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1296,7 +1258,7 @@ func (x *ForumTopicReopened) String() string {
 func (*ForumTopicReopened) ProtoMessage() {}
 
 func (x *ForumTopicReopened) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[33]
+	mi := &file_misc_proto_msgTypes[32]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1309,7 +1271,7 @@ func (x *ForumTopicReopened) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ForumTopicReopened.ProtoReflect.Descriptor instead.
 func (*ForumTopicReopened) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{33}
+	return file_misc_proto_rawDescGZIP(), []int{32}
 }
 
 type GeneralForumTopicHidden struct {
@@ -1321,7 +1283,7 @@ type GeneralForumTopicHidden struct {
 func (x *GeneralForumTopicHidden) Reset() {
 	*x = GeneralForumTopicHidden{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[34]
+		mi := &file_misc_proto_msgTypes[33]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1334,7 +1296,7 @@ func (x *GeneralForumTopicHidden) String() string {
 func (*GeneralForumTopicHidden) ProtoMessage() {}
 
 func (x *GeneralForumTopicHidden) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[34]
+	mi := &file_misc_proto_msgTypes[33]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1347,7 +1309,7 @@ func (x *GeneralForumTopicHidden) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GeneralForumTopicHidden.ProtoReflect.Descriptor instead.
 func (*GeneralForumTopicHidden) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{34}
+	return file_misc_proto_rawDescGZIP(), []int{33}
 }
 
 type GeneralForumTopicUnhidden struct {
@@ -1359,7 +1321,7 @@ type GeneralForumTopicUnhidden struct {
 func (x *GeneralForumTopicUnhidden) Reset() {
 	*x = GeneralForumTopicUnhidden{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[35]
+		mi := &file_misc_proto_msgTypes[34]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1372,7 +1334,7 @@ func (x *GeneralForumTopicUnhidden) String() string {
 func (*GeneralForumTopicUnhidden) ProtoMessage() {}
 
 func (x *GeneralForumTopicUnhidden) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[35]
+	mi := &file_misc_proto_msgTypes[34]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1385,7 +1347,7 @@ func (x *GeneralForumTopicUnhidden) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GeneralForumTopicUnhidden.ProtoReflect.Descriptor instead.
 func (*GeneralForumTopicUnhidden) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{35}
+	return file_misc_proto_rawDescGZIP(), []int{34}
 }
 
 type GiveawayCreated struct {
@@ -1397,7 +1359,7 @@ type GiveawayCreated struct {
 func (x *GiveawayCreated) Reset() {
 	*x = GiveawayCreated{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[36]
+		mi := &file_misc_proto_msgTypes[35]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1410,7 +1372,7 @@ func (x *GiveawayCreated) String() string {
 func (*GiveawayCreated) ProtoMessage() {}
 
 func (x *GiveawayCreated) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[36]
+	mi := &file_misc_proto_msgTypes[35]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1423,7 +1385,7 @@ func (x *GiveawayCreated) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GiveawayCreated.ProtoReflect.Descriptor instead.
 func (*GiveawayCreated) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{36}
+	return file_misc_proto_rawDescGZIP(), []int{35}
 }
 
 type Giveaway struct {
@@ -1435,7 +1397,7 @@ type Giveaway struct {
 func (x *Giveaway) Reset() {
 	*x = Giveaway{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[37]
+		mi := &file_misc_proto_msgTypes[36]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1448,7 +1410,7 @@ func (x *Giveaway) String() string {
 func (*Giveaway) ProtoMessage() {}
 
 func (x *Giveaway) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[37]
+	mi := &file_misc_proto_msgTypes[36]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1461,7 +1423,7 @@ func (x *Giveaway) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Giveaway.ProtoReflect.Descriptor instead.
 func (*Giveaway) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{37}
+	return file_misc_proto_rawDescGZIP(), []int{36}
 }
 
 type GiveawayWinners struct {
@@ -1473,7 +1435,7 @@ type GiveawayWinners struct {
 func (x *GiveawayWinners) Reset() {
 	*x = GiveawayWinners{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[38]
+		mi := &file_misc_proto_msgTypes[37]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1486,7 +1448,7 @@ func (x *GiveawayWinners) String() string {
 func (*GiveawayWinners) ProtoMessage() {}
 
 func (x *GiveawayWinners) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[38]
+	mi := &file_misc_proto_msgTypes[37]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1499,7 +1461,7 @@ func (x *GiveawayWinners) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GiveawayWinners.ProtoReflect.Descriptor instead.
 func (*GiveawayWinners) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{38}
+	return file_misc_proto_rawDescGZIP(), []int{37}
 }
 
 type GiveawayCompleted struct {
@@ -1511,7 +1473,7 @@ type GiveawayCompleted struct {
 func (x *GiveawayCompleted) Reset() {
 	*x = GiveawayCompleted{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[39]
+		mi := &file_misc_proto_msgTypes[38]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1524,7 +1486,7 @@ func (x *GiveawayCompleted) String() string {
 func (*GiveawayCompleted) ProtoMessage() {}
 
 func (x *GiveawayCompleted) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[39]
+	mi := &file_misc_proto_msgTypes[38]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1537,7 +1499,7 @@ func (x *GiveawayCompleted) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GiveawayCompleted.ProtoReflect.Descriptor instead.
 func (*GiveawayCompleted) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{39}
+	return file_misc_proto_rawDescGZIP(), []int{38}
 }
 
 type VideoChatScheduled struct {
@@ -1549,7 +1511,7 @@ type VideoChatScheduled struct {
 func (x *VideoChatScheduled) Reset() {
 	*x = VideoChatScheduled{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[40]
+		mi := &file_misc_proto_msgTypes[39]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1562,7 +1524,7 @@ func (x *VideoChatScheduled) String() string {
 func (*VideoChatScheduled) ProtoMessage() {}
 
 func (x *VideoChatScheduled) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[40]
+	mi := &file_misc_proto_msgTypes[39]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1575,7 +1537,7 @@ func (x *VideoChatScheduled) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use VideoChatScheduled.ProtoReflect.Descriptor instead.
 func (*VideoChatScheduled) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{40}
+	return file_misc_proto_rawDescGZIP(), []int{39}
 }
 
 type VideoChatStarted struct {
@@ -1587,7 +1549,7 @@ type VideoChatStarted struct {
 func (x *VideoChatStarted) Reset() {
 	*x = VideoChatStarted{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[41]
+		mi := &file_misc_proto_msgTypes[40]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1600,7 +1562,7 @@ func (x *VideoChatStarted) String() string {
 func (*VideoChatStarted) ProtoMessage() {}
 
 func (x *VideoChatStarted) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[41]
+	mi := &file_misc_proto_msgTypes[40]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1613,7 +1575,7 @@ func (x *VideoChatStarted) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use VideoChatStarted.ProtoReflect.Descriptor instead.
 func (*VideoChatStarted) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{41}
+	return file_misc_proto_rawDescGZIP(), []int{40}
 }
 
 type VideoChatEnded struct {
@@ -1625,7 +1587,7 @@ type VideoChatEnded struct {
 func (x *VideoChatEnded) Reset() {
 	*x = VideoChatEnded{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[42]
+		mi := &file_misc_proto_msgTypes[41]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1638,7 +1600,7 @@ func (x *VideoChatEnded) String() string {
 func (*VideoChatEnded) ProtoMessage() {}
 
 func (x *VideoChatEnded) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[42]
+	mi := &file_misc_proto_msgTypes[41]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1651,7 +1613,7 @@ func (x *VideoChatEnded) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use VideoChatEnded.ProtoReflect.Descriptor instead.
 func (*VideoChatEnded) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{42}
+	return file_misc_proto_rawDescGZIP(), []int{41}
 }
 
 type VideoChatParticipantsInvited struct {
@@ -1663,7 +1625,7 @@ type VideoChatParticipantsInvited struct {
 func (x *VideoChatParticipantsInvited) Reset() {
 	*x = VideoChatParticipantsInvited{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[43]
+		mi := &file_misc_proto_msgTypes[42]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1676,7 +1638,7 @@ func (x *VideoChatParticipantsInvited) String() string {
 func (*VideoChatParticipantsInvited) ProtoMessage() {}
 
 func (x *VideoChatParticipantsInvited) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[43]
+	mi := &file_misc_proto_msgTypes[42]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1689,7 +1651,7 @@ func (x *VideoChatParticipantsInvited) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use VideoChatParticipantsInvited.ProtoReflect.Descriptor instead.
 func (*VideoChatParticipantsInvited) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{43}
+	return file_misc_proto_rawDescGZIP(), []int{42}
 }
 
 type WebAppData struct {
@@ -1701,7 +1663,7 @@ type WebAppData struct {
 func (x *WebAppData) Reset() {
 	*x = WebAppData{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[44]
+		mi := &file_misc_proto_msgTypes[43]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1714,7 +1676,7 @@ func (x *WebAppData) String() string {
 func (*WebAppData) ProtoMessage() {}
 
 func (x *WebAppData) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[44]
+	mi := &file_misc_proto_msgTypes[43]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1727,7 +1689,7 @@ func (x *WebAppData) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use WebAppData.ProtoReflect.Descriptor instead.
 func (*WebAppData) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{44}
+	return file_misc_proto_rawDescGZIP(), []int{43}
 }
 
 type MessageAutoDeleteTimerChanged struct {
@@ -1739,7 +1701,7 @@ type MessageAutoDeleteTimerChanged struct {
 func (x *MessageAutoDeleteTimerChanged) Reset() {
 	*x = MessageAutoDeleteTimerChanged{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[45]
+		mi := &file_misc_proto_msgTypes[44]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1752,7 +1714,7 @@ func (x *MessageAutoDeleteTimerChanged) String() string {
 func (*MessageAutoDeleteTimerChanged) ProtoMessage() {}
 
 func (x *MessageAutoDeleteTimerChanged) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[45]
+	mi := &file_misc_proto_msgTypes[44]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1765,7 +1727,7 @@ func (x *MessageAutoDeleteTimerChanged) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MessageAutoDeleteTimerChanged.ProtoReflect.Descriptor instead.
 func (*MessageAutoDeleteTimerChanged) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{45}
+	return file_misc_proto_rawDescGZIP(), []int{44}
 }
 
 type BusinessConnection struct {
@@ -1777,7 +1739,7 @@ type BusinessConnection struct {
 func (x *BusinessConnection) Reset() {
 	*x = BusinessConnection{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[46]
+		mi := &file_misc_proto_msgTypes[45]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1790,7 +1752,7 @@ func (x *BusinessConnection) String() string {
 func (*BusinessConnection) ProtoMessage() {}
 
 func (x *BusinessConnection) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[46]
+	mi := &file_misc_proto_msgTypes[45]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1803,7 +1765,7 @@ func (x *BusinessConnection) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BusinessConnection.ProtoReflect.Descriptor instead.
 func (*BusinessConnection) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{46}
+	return file_misc_proto_rawDescGZIP(), []int{45}
 }
 
 type BusinessMessagesDeleted struct {
@@ -1815,7 +1777,7 @@ type BusinessMessagesDeleted struct {
 func (x *BusinessMessagesDeleted) Reset() {
 	*x = BusinessMessagesDeleted{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[47]
+		mi := &file_misc_proto_msgTypes[46]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1828,7 +1790,7 @@ func (x *BusinessMessagesDeleted) String() string {
 func (*BusinessMessagesDeleted) ProtoMessage() {}
 
 func (x *BusinessMessagesDeleted) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[47]
+	mi := &file_misc_proto_msgTypes[46]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1841,7 +1803,7 @@ func (x *BusinessMessagesDeleted) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BusinessMessagesDeleted.ProtoReflect.Descriptor instead.
 func (*BusinessMessagesDeleted) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{47}
+	return file_misc_proto_rawDescGZIP(), []int{46}
 }
 
 type MessageReactionUpdated struct {
@@ -1853,7 +1815,7 @@ type MessageReactionUpdated struct {
 func (x *MessageReactionUpdated) Reset() {
 	*x = MessageReactionUpdated{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[48]
+		mi := &file_misc_proto_msgTypes[47]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1866,7 +1828,7 @@ func (x *MessageReactionUpdated) String() string {
 func (*MessageReactionUpdated) ProtoMessage() {}
 
 func (x *MessageReactionUpdated) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[48]
+	mi := &file_misc_proto_msgTypes[47]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1879,7 +1841,7 @@ func (x *MessageReactionUpdated) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MessageReactionUpdated.ProtoReflect.Descriptor instead.
 func (*MessageReactionUpdated) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{48}
+	return file_misc_proto_rawDescGZIP(), []int{47}
 }
 
 type MessageReactionCountUpdated struct {
@@ -1891,7 +1853,7 @@ type MessageReactionCountUpdated struct {
 func (x *MessageReactionCountUpdated) Reset() {
 	*x = MessageReactionCountUpdated{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[49]
+		mi := &file_misc_proto_msgTypes[48]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1904,7 +1866,7 @@ func (x *MessageReactionCountUpdated) String() string {
 func (*MessageReactionCountUpdated) ProtoMessage() {}
 
 func (x *MessageReactionCountUpdated) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[49]
+	mi := &file_misc_proto_msgTypes[48]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1917,7 +1879,7 @@ func (x *MessageReactionCountUpdated) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MessageReactionCountUpdated.ProtoReflect.Descriptor instead.
 func (*MessageReactionCountUpdated) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{49}
+	return file_misc_proto_rawDescGZIP(), []int{48}
 }
 
 type InlineQuery struct {
@@ -1929,7 +1891,7 @@ type InlineQuery struct {
 func (x *InlineQuery) Reset() {
 	*x = InlineQuery{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[50]
+		mi := &file_misc_proto_msgTypes[49]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1942,7 +1904,7 @@ func (x *InlineQuery) String() string {
 func (*InlineQuery) ProtoMessage() {}
 
 func (x *InlineQuery) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[50]
+	mi := &file_misc_proto_msgTypes[49]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1955,7 +1917,7 @@ func (x *InlineQuery) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use InlineQuery.ProtoReflect.Descriptor instead.
 func (*InlineQuery) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{50}
+	return file_misc_proto_rawDescGZIP(), []int{49}
 }
 
 type ChosenInlineResult struct {
@@ -1967,7 +1929,7 @@ type ChosenInlineResult struct {
 func (x *ChosenInlineResult) Reset() {
 	*x = ChosenInlineResult{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[51]
+		mi := &file_misc_proto_msgTypes[50]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1980,7 +1942,7 @@ func (x *ChosenInlineResult) String() string {
 func (*ChosenInlineResult) ProtoMessage() {}
 
 func (x *ChosenInlineResult) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[51]
+	mi := &file_misc_proto_msgTypes[50]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1993,45 +1955,7 @@ func (x *ChosenInlineResult) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChosenInlineResult.ProtoReflect.Descriptor instead.
 func (*ChosenInlineResult) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{51}
-}
-
-type CallbackQuery struct {
-	state         protoimpl.MessageState
-	sizeCache     protoimpl.SizeCache
-	unknownFields protoimpl.UnknownFields
-}
-
-func (x *CallbackQuery) Reset() {
-	*x = CallbackQuery{}
-	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[52]
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		ms.StoreMessageInfo(mi)
-	}
-}
-
-func (x *CallbackQuery) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*CallbackQuery) ProtoMessage() {}
-
-func (x *CallbackQuery) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[52]
-	if protoimpl.UnsafeEnabled && x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use CallbackQuery.ProtoReflect.Descriptor instead.
-func (*CallbackQuery) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{52}
+	return file_misc_proto_rawDescGZIP(), []int{50}
 }
 
 type ShippingQuery struct {
@@ -2043,7 +1967,7 @@ type ShippingQuery struct {
 func (x *ShippingQuery) Reset() {
 	*x = ShippingQuery{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[53]
+		mi := &file_misc_proto_msgTypes[51]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2056,7 +1980,7 @@ func (x *ShippingQuery) String() string {
 func (*ShippingQuery) ProtoMessage() {}
 
 func (x *ShippingQuery) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[53]
+	mi := &file_misc_proto_msgTypes[51]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2069,7 +1993,7 @@ func (x *ShippingQuery) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ShippingQuery.ProtoReflect.Descriptor instead.
 func (*ShippingQuery) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{53}
+	return file_misc_proto_rawDescGZIP(), []int{51}
 }
 
 type PreCheckoutQuery struct {
@@ -2081,7 +2005,7 @@ type PreCheckoutQuery struct {
 func (x *PreCheckoutQuery) Reset() {
 	*x = PreCheckoutQuery{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[54]
+		mi := &file_misc_proto_msgTypes[52]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2094,7 +2018,7 @@ func (x *PreCheckoutQuery) String() string {
 func (*PreCheckoutQuery) ProtoMessage() {}
 
 func (x *PreCheckoutQuery) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[54]
+	mi := &file_misc_proto_msgTypes[52]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2107,7 +2031,7 @@ func (x *PreCheckoutQuery) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PreCheckoutQuery.ProtoReflect.Descriptor instead.
 func (*PreCheckoutQuery) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{54}
+	return file_misc_proto_rawDescGZIP(), []int{52}
 }
 
 type PollAnswer struct {
@@ -2119,7 +2043,7 @@ type PollAnswer struct {
 func (x *PollAnswer) Reset() {
 	*x = PollAnswer{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[55]
+		mi := &file_misc_proto_msgTypes[53]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2132,7 +2056,7 @@ func (x *PollAnswer) String() string {
 func (*PollAnswer) ProtoMessage() {}
 
 func (x *PollAnswer) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[55]
+	mi := &file_misc_proto_msgTypes[53]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2145,7 +2069,7 @@ func (x *PollAnswer) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PollAnswer.ProtoReflect.Descriptor instead.
 func (*PollAnswer) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{55}
+	return file_misc_proto_rawDescGZIP(), []int{53}
 }
 
 type ChatMemberUpdated struct {
@@ -2157,7 +2081,7 @@ type ChatMemberUpdated struct {
 func (x *ChatMemberUpdated) Reset() {
 	*x = ChatMemberUpdated{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[56]
+		mi := &file_misc_proto_msgTypes[54]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2170,7 +2094,7 @@ func (x *ChatMemberUpdated) String() string {
 func (*ChatMemberUpdated) ProtoMessage() {}
 
 func (x *ChatMemberUpdated) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[56]
+	mi := &file_misc_proto_msgTypes[54]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2183,7 +2107,7 @@ func (x *ChatMemberUpdated) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChatMemberUpdated.ProtoReflect.Descriptor instead.
 func (*ChatMemberUpdated) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{56}
+	return file_misc_proto_rawDescGZIP(), []int{54}
 }
 
 type ChatJoinRequest struct {
@@ -2195,7 +2119,7 @@ type ChatJoinRequest struct {
 func (x *ChatJoinRequest) Reset() {
 	*x = ChatJoinRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[57]
+		mi := &file_misc_proto_msgTypes[55]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2208,7 +2132,7 @@ func (x *ChatJoinRequest) String() string {
 func (*ChatJoinRequest) ProtoMessage() {}
 
 func (x *ChatJoinRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[57]
+	mi := &file_misc_proto_msgTypes[55]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2221,7 +2145,7 @@ func (x *ChatJoinRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChatJoinRequest.ProtoReflect.Descriptor instead.
 func (*ChatJoinRequest) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{57}
+	return file_misc_proto_rawDescGZIP(), []int{55}
 }
 
 type ChatBoostUpdated struct {
@@ -2233,7 +2157,7 @@ type ChatBoostUpdated struct {
 func (x *ChatBoostUpdated) Reset() {
 	*x = ChatBoostUpdated{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[58]
+		mi := &file_misc_proto_msgTypes[56]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2246,7 +2170,7 @@ func (x *ChatBoostUpdated) String() string {
 func (*ChatBoostUpdated) ProtoMessage() {}
 
 func (x *ChatBoostUpdated) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[58]
+	mi := &file_misc_proto_msgTypes[56]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2259,7 +2183,7 @@ func (x *ChatBoostUpdated) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChatBoostUpdated.ProtoReflect.Descriptor instead.
 func (*ChatBoostUpdated) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{58}
+	return file_misc_proto_rawDescGZIP(), []int{56}
 }
 
 type ChatBoostRemoved struct {
@@ -2271,7 +2195,7 @@ type ChatBoostRemoved struct {
 func (x *ChatBoostRemoved) Reset() {
 	*x = ChatBoostRemoved{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[59]
+		mi := &file_misc_proto_msgTypes[57]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2284,7 +2208,7 @@ func (x *ChatBoostRemoved) String() string {
 func (*ChatBoostRemoved) ProtoMessage() {}
 
 func (x *ChatBoostRemoved) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[59]
+	mi := &file_misc_proto_msgTypes[57]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2297,7 +2221,7 @@ func (x *ChatBoostRemoved) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ChatBoostRemoved.ProtoReflect.Descriptor instead.
 func (*ChatBoostRemoved) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{59}
+	return file_misc_proto_rawDescGZIP(), []int{57}
 }
 
 type InlineKeyboardMarkup struct {
@@ -2309,7 +2233,7 @@ type InlineKeyboardMarkup struct {
 func (x *InlineKeyboardMarkup) Reset() {
 	*x = InlineKeyboardMarkup{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[60]
+		mi := &file_misc_proto_msgTypes[58]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2322,7 +2246,7 @@ func (x *InlineKeyboardMarkup) String() string {
 func (*InlineKeyboardMarkup) ProtoMessage() {}
 
 func (x *InlineKeyboardMarkup) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[60]
+	mi := &file_misc_proto_msgTypes[58]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2335,7 +2259,7 @@ func (x *InlineKeyboardMarkup) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use InlineKeyboardMarkup.ProtoReflect.Descriptor instead.
 func (*InlineKeyboardMarkup) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{60}
+	return file_misc_proto_rawDescGZIP(), []int{58}
 }
 
 type ReplyKeyboardMarkup struct {
@@ -2347,7 +2271,7 @@ type ReplyKeyboardMarkup struct {
 func (x *ReplyKeyboardMarkup) Reset() {
 	*x = ReplyKeyboardMarkup{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[61]
+		mi := &file_misc_proto_msgTypes[59]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2360,7 +2284,7 @@ func (x *ReplyKeyboardMarkup) String() string {
 func (*ReplyKeyboardMarkup) ProtoMessage() {}
 
 func (x *ReplyKeyboardMarkup) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[61]
+	mi := &file_misc_proto_msgTypes[59]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2373,7 +2297,7 @@ func (x *ReplyKeyboardMarkup) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ReplyKeyboardMarkup.ProtoReflect.Descriptor instead.
 func (*ReplyKeyboardMarkup) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{61}
+	return file_misc_proto_rawDescGZIP(), []int{59}
 }
 
 type ReplyKeyboardRemove struct {
@@ -2385,7 +2309,7 @@ type ReplyKeyboardRemove struct {
 func (x *ReplyKeyboardRemove) Reset() {
 	*x = ReplyKeyboardRemove{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[62]
+		mi := &file_misc_proto_msgTypes[60]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2398,7 +2322,7 @@ func (x *ReplyKeyboardRemove) String() string {
 func (*ReplyKeyboardRemove) ProtoMessage() {}
 
 func (x *ReplyKeyboardRemove) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[62]
+	mi := &file_misc_proto_msgTypes[60]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2411,7 +2335,7 @@ func (x *ReplyKeyboardRemove) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ReplyKeyboardRemove.ProtoReflect.Descriptor instead.
 func (*ReplyKeyboardRemove) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{62}
+	return file_misc_proto_rawDescGZIP(), []int{60}
 }
 
 type ForceReply struct {
@@ -2423,7 +2347,7 @@ type ForceReply struct {
 func (x *ForceReply) Reset() {
 	*x = ForceReply{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[63]
+		mi := &file_misc_proto_msgTypes[61]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2436,7 +2360,7 @@ func (x *ForceReply) String() string {
 func (*ForceReply) ProtoMessage() {}
 
 func (x *ForceReply) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[63]
+	mi := &file_misc_proto_msgTypes[61]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2449,46 +2373,7 @@ func (x *ForceReply) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ForceReply.ProtoReflect.Descriptor instead.
 func (*ForceReply) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{63}
-}
-
-// Message representing reply parameters.
-type ReplyParameters struct {
-	state         protoimpl.MessageState
-	sizeCache     protoimpl.SizeCache
-	unknownFields protoimpl.UnknownFields
-}
-
-func (x *ReplyParameters) Reset() {
-	*x = ReplyParameters{}
-	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[64]
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		ms.StoreMessageInfo(mi)
-	}
-}
-
-func (x *ReplyParameters) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*ReplyParameters) ProtoMessage() {}
-
-func (x *ReplyParameters) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[64]
-	if protoimpl.UnsafeEnabled && x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use ReplyParameters.ProtoReflect.Descriptor instead.
-func (*ReplyParameters) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{64}
+	return file_misc_proto_rawDescGZIP(), []int{61}
 }
 
 // Message representing reply markup options.
@@ -2511,7 +2396,7 @@ type ReplyMarkup struct {
 func (x *ReplyMarkup) Reset() {
 	*x = ReplyMarkup{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_misc_proto_msgTypes[65]
+		mi := &file_misc_proto_msgTypes[62]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2524,7 +2409,7 @@ func (x *ReplyMarkup) String() string {
 func (*ReplyMarkup) ProtoMessage() {}
 
 func (x *ReplyMarkup) ProtoReflect() protoreflect.Message {
-	mi := &file_misc_proto_msgTypes[65]
+	mi := &file_misc_proto_msgTypes[62]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2537,7 +2422,7 @@ func (x *ReplyMarkup) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ReplyMarkup.ProtoReflect.Descriptor instead.
 func (*ReplyMarkup) Descriptor() ([]byte, []int) {
-	return file_misc_proto_rawDescGZIP(), []int{65}
+	return file_misc_proto_rawDescGZIP(), []int{62}
 }
 
 func (m *ReplyMarkup) GetMarkup() isReplyMarkup_Markup {
@@ -2621,67 +2506,63 @@ var file_misc_proto_rawDesc = []byte{
 	0x69, 0x6f, 0x6e, 0x73, 0x22, 0x09, 0x0a, 0x07, 0x43, 0x6f, 0x6e, 0x74, 0x61, 0x63, 0x74, 0x22,
 	0x06, 0x0a, 0x04, 0x44, 0x69, 0x63, 0x65, 0x22, 0x06, 0x0a, 0x04, 0x47, 0x61, 0x6d, 0x65, 0x22,
 	0x06, 0x0a, 0x04, 0x50, 0x6f, 0x6c, 0x6c, 0x22, 0x07, 0x0a, 0x05, 0x56, 0x65, 0x6e, 0x75, 0x65,
-	0x22, 0x0a, 0x0a, 0x08, 0x4c, 0x6f, 0x63, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x22, 0x1a, 0x0a, 0x18,
-	0x4d, 0x61, 0x79, 0x62, 0x65, 0x49, 0x6e, 0x61, 0x63, 0x63, 0x65, 0x73, 0x73, 0x69, 0x62, 0x6c,
-	0x65, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x22, 0x09, 0x0a, 0x07, 0x49, 0x6e, 0x76, 0x6f,
-	0x69, 0x63, 0x65, 0x22, 0x13, 0x0a, 0x11, 0x53, 0x75, 0x63, 0x63, 0x65, 0x73, 0x73, 0x66, 0x75,
-	0x6c, 0x50, 0x61, 0x79, 0x6d, 0x65, 0x6e, 0x74, 0x22, 0x11, 0x0a, 0x0f, 0x52, 0x65, 0x66, 0x75,
-	0x6e, 0x64, 0x65, 0x64, 0x50, 0x61, 0x79, 0x6d, 0x65, 0x6e, 0x74, 0x22, 0x0d, 0x0a, 0x0b, 0x55,
-	0x73, 0x65, 0x72, 0x73, 0x53, 0x68, 0x61, 0x72, 0x65, 0x64, 0x22, 0x0c, 0x0a, 0x0a, 0x43, 0x68,
-	0x61, 0x74, 0x53, 0x68, 0x61, 0x72, 0x65, 0x64, 0x22, 0x14, 0x0a, 0x12, 0x57, 0x72, 0x69, 0x74,
-	0x65, 0x41, 0x63, 0x63, 0x65, 0x73, 0x73, 0x41, 0x6c, 0x6c, 0x6f, 0x77, 0x65, 0x64, 0x22, 0x0e,
-	0x0a, 0x0c, 0x50, 0x61, 0x73, 0x73, 0x70, 0x6f, 0x72, 0x74, 0x44, 0x61, 0x74, 0x61, 0x22, 0x19,
-	0x0a, 0x17, 0x50, 0x72, 0x6f, 0x78, 0x69, 0x6d, 0x69, 0x74, 0x79, 0x41, 0x6c, 0x65, 0x72, 0x74,
-	0x54, 0x72, 0x69, 0x67, 0x67, 0x65, 0x72, 0x65, 0x64, 0x22, 0x10, 0x0a, 0x0e, 0x43, 0x68, 0x61,
-	0x74, 0x42, 0x6f, 0x6f, 0x73, 0x74, 0x41, 0x64, 0x64, 0x65, 0x64, 0x22, 0x10, 0x0a, 0x0e, 0x43,
-	0x68, 0x61, 0x74, 0x42, 0x61, 0x63, 0x6b, 0x67, 0x72, 0x6f, 0x75, 0x6e, 0x64, 0x22, 0x13, 0x0a,
-	0x11, 0x46, 0x6f, 0x72, 0x75, 0x6d, 0x54, 0x6f, 0x70, 0x69, 0x63, 0x43, 0x72, 0x65, 0x61, 0x74,
-	0x65, 0x64, 0x22, 0x12, 0x0a, 0x10, 0x46, 0x6f, 0x72, 0x75, 0x6d, 0x54, 0x6f, 0x70, 0x69, 0x63,
-	0x45, 0x64, 0x69, 0x74, 0x65, 0x64, 0x22, 0x12, 0x0a, 0x10, 0x46, 0x6f, 0x72, 0x75, 0x6d, 0x54,
-	0x6f, 0x70, 0x69, 0x63, 0x43, 0x6c, 0x6f, 0x73, 0x65, 0x64, 0x22, 0x14, 0x0a, 0x12, 0x46, 0x6f,
-	0x72, 0x75, 0x6d, 0x54, 0x6f, 0x70, 0x69, 0x63, 0x52, 0x65, 0x6f, 0x70, 0x65, 0x6e, 0x65, 0x64,
-	0x22, 0x19, 0x0a, 0x17, 0x47, 0x65, 0x6e, 0x65, 0x72, 0x61, 0x6c, 0x46, 0x6f, 0x72, 0x75, 0x6d,
-	0x54, 0x6f, 0x70, 0x69, 0x63, 0x48, 0x69, 0x64, 0x64, 0x65, 0x6e, 0x22, 0x1b, 0x0a, 0x19, 0x47,
-	0x65, 0x6e, 0x65, 0x72, 0x61, 0x6c, 0x46, 0x6f, 0x72, 0x75, 0x6d, 0x54, 0x6f, 0x70, 0x69, 0x63,
-	0x55, 0x6e, 0x68, 0x69, 0x64, 0x64, 0x65, 0x6e, 0x22, 0x11, 0x0a, 0x0f, 0x47, 0x69, 0x76, 0x65,
-	0x61, 0x77, 0x61, 0x79, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x64, 0x22, 0x0a, 0x0a, 0x08, 0x47,
-	0x69, 0x76, 0x65, 0x61, 0x77, 0x61, 0x79, 0x22, 0x11, 0x0a, 0x0f, 0x47, 0x69, 0x76, 0x65, 0x61,
-	0x77, 0x61, 0x79, 0x57, 0x69, 0x6e, 0x6e, 0x65, 0x72, 0x73, 0x22, 0x13, 0x0a, 0x11, 0x47, 0x69,
-	0x76, 0x65, 0x61, 0x77, 0x61, 0x79, 0x43, 0x6f, 0x6d, 0x70, 0x6c, 0x65, 0x74, 0x65, 0x64, 0x22,
-	0x14, 0x0a, 0x12, 0x56, 0x69, 0x64, 0x65, 0x6f, 0x43, 0x68, 0x61, 0x74, 0x53, 0x63, 0x68, 0x65,
-	0x64, 0x75, 0x6c, 0x65, 0x64, 0x22, 0x12, 0x0a, 0x10, 0x56, 0x69, 0x64, 0x65, 0x6f, 0x43, 0x68,
-	0x61, 0x74, 0x53, 0x74, 0x61, 0x72, 0x74, 0x65, 0x64, 0x22, 0x10, 0x0a, 0x0e, 0x56, 0x69, 0x64,
-	0x65, 0x6f, 0x43, 0x68, 0x61, 0x74, 0x45, 0x6e, 0x64, 0x65, 0x64, 0x22, 0x1e, 0x0a, 0x1c, 0x56,
-	0x69, 0x64, 0x65, 0x6f, 0x43, 0x68, 0x61, 0x74, 0x50, 0x61, 0x72, 0x74, 0x69, 0x63, 0x69, 0x70,
-	0x61, 0x6e, 0x74, 0x73, 0x49, 0x6e, 0x76, 0x69, 0x74, 0x65, 0x64, 0x22, 0x0c, 0x0a, 0x0a, 0x57,
-	0x65, 0x62, 0x41, 0x70, 0x70, 0x44, 0x61, 0x74, 0x61, 0x22, 0x1f, 0x0a, 0x1d, 0x4d, 0x65, 0x73,
-	0x73, 0x61, 0x67, 0x65, 0x41, 0x75, 0x74, 0x6f, 0x44, 0x65, 0x6c, 0x65, 0x74, 0x65, 0x54, 0x69,
-	0x6d, 0x65, 0x72, 0x43, 0x68, 0x61, 0x6e, 0x67, 0x65, 0x64, 0x22, 0x14, 0x0a, 0x12, 0x42, 0x75,
-	0x73, 0x69, 0x6e, 0x65, 0x73, 0x73, 0x43, 0x6f, 0x6e, 0x6e, 0x65, 0x63, 0x74, 0x69, 0x6f, 0x6e,
-	0x22, 0x19, 0x0a, 0x17, 0x42, 0x75, 0x73, 0x69, 0x6e, 0x65, 0x73, 0x73, 0x4d, 0x65, 0x73, 0x73,
-	0x61, 0x67, 0x65, 0x73, 0x44, 0x65, 0x6c, 0x65, 0x74, 0x65, 0x64, 0x22, 0x18, 0x0a, 0x16, 0x4d,
-	0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x52, 0x65, 0x61, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x55, 0x70,
-	0x64, 0x61, 0x74, 0x65, 0x64, 0x22, 0x1d, 0x0a, 0x1b, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65,
-	0x52, 0x65, 0x61, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x43, 0x6f, 0x75, 0x6e, 0x74, 0x55, 0x70, 0x64,
-	0x61, 0x74, 0x65, 0x64, 0x22, 0x0d, 0x0a, 0x0b, 0x49, 0x6e, 0x6c, 0x69, 0x6e, 0x65, 0x51, 0x75,
-	0x65, 0x72, 0x79, 0x22, 0x14, 0x0a, 0x12, 0x43, 0x68, 0x6f, 0x73, 0x65, 0x6e, 0x49, 0x6e, 0x6c,
-	0x69, 0x6e, 0x65, 0x52, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x22, 0x0f, 0x0a, 0x0d, 0x43, 0x61, 0x6c,
-	0x6c, 0x62, 0x61, 0x63, 0x6b, 0x51, 0x75, 0x65, 0x72, 0x79, 0x22, 0x0f, 0x0a, 0x0d, 0x53, 0x68,
-	0x69, 0x70, 0x70, 0x69, 0x6e, 0x67, 0x51, 0x75, 0x65, 0x72, 0x79, 0x22, 0x12, 0x0a, 0x10, 0x50,
-	0x72, 0x65, 0x43, 0x68, 0x65, 0x63, 0x6b, 0x6f, 0x75, 0x74, 0x51, 0x75, 0x65, 0x72, 0x79, 0x22,
-	0x0c, 0x0a, 0x0a, 0x50, 0x6f, 0x6c, 0x6c, 0x41, 0x6e, 0x73, 0x77, 0x65, 0x72, 0x22, 0x13, 0x0a,
-	0x11, 0x43, 0x68, 0x61, 0x74, 0x4d, 0x65, 0x6d, 0x62, 0x65, 0x72, 0x55, 0x70, 0x64, 0x61, 0x74,
-	0x65, 0x64, 0x22, 0x11, 0x0a, 0x0f, 0x43, 0x68, 0x61, 0x74, 0x4a, 0x6f, 0x69, 0x6e, 0x52, 0x65,
-	0x71, 0x75, 0x65, 0x73, 0x74, 0x22, 0x12, 0x0a, 0x10, 0x43, 0x68, 0x61, 0x74, 0x42, 0x6f, 0x6f,
-	0x73, 0x74, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x64, 0x22, 0x12, 0x0a, 0x10, 0x43, 0x68, 0x61,
-	0x74, 0x42, 0x6f, 0x6f, 0x73, 0x74, 0x52, 0x65, 0x6d, 0x6f, 0x76, 0x65, 0x64, 0x22, 0x16, 0x0a,
-	0x14, 0x49, 0x6e, 0x6c, 0x69, 0x6e, 0x65, 0x4b, 0x65, 0x79, 0x62, 0x6f, 0x61, 0x72, 0x64, 0x4d,
-	0x61, 0x72, 0x6b, 0x75, 0x70, 0x22, 0x15, 0x0a, 0x13, 0x52, 0x65, 0x70, 0x6c, 0x79, 0x4b, 0x65,
-	0x79, 0x62, 0x6f, 0x61, 0x72, 0x64, 0x4d, 0x61, 0x72, 0x6b, 0x75, 0x70, 0x22, 0x15, 0x0a, 0x13,
-	0x52, 0x65, 0x70, 0x6c, 0x79, 0x4b, 0x65, 0x79, 0x62, 0x6f, 0x61, 0x72, 0x64, 0x52, 0x65, 0x6d,
-	0x6f, 0x76, 0x65, 0x22, 0x0c, 0x0a, 0x0a, 0x46, 0x6f, 0x72, 0x63, 0x65, 0x52, 0x65, 0x70, 0x6c,
-	0x79, 0x22, 0x11, 0x0a, 0x0f, 0x52, 0x65, 0x70, 0x6c, 0x79, 0x50, 0x61, 0x72, 0x61, 0x6d, 0x65,
-	0x74, 0x65, 0x72, 0x73, 0x22, 0x95, 0x02, 0x0a, 0x0b, 0x52, 0x65, 0x70, 0x6c, 0x79, 0x4d, 0x61,
+	0x22, 0x0a, 0x0a, 0x08, 0x4c, 0x6f, 0x63, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x22, 0x09, 0x0a, 0x07,
+	0x49, 0x6e, 0x76, 0x6f, 0x69, 0x63, 0x65, 0x22, 0x13, 0x0a, 0x11, 0x53, 0x75, 0x63, 0x63, 0x65,
+	0x73, 0x73, 0x66, 0x75, 0x6c, 0x50, 0x61, 0x79, 0x6d, 0x65, 0x6e, 0x74, 0x22, 0x11, 0x0a, 0x0f,
+	0x52, 0x65, 0x66, 0x75, 0x6e, 0x64, 0x65, 0x64, 0x50, 0x61, 0x79, 0x6d, 0x65, 0x6e, 0x74, 0x22,
+	0x0d, 0x0a, 0x0b, 0x55, 0x73, 0x65, 0x72, 0x73, 0x53, 0x68, 0x61, 0x72, 0x65, 0x64, 0x22, 0x0c,
+	0x0a, 0x0a, 0x43, 0x68, 0x61, 0x74, 0x53, 0x68, 0x61, 0x72, 0x65, 0x64, 0x22, 0x14, 0x0a, 0x12,
+	0x57, 0x72, 0x69, 0x74, 0x65, 0x41, 0x63, 0x63, 0x65, 0x73, 0x73, 0x41, 0x6c, 0x6c, 0x6f, 0x77,
+	0x65, 0x64, 0x22, 0x0e, 0x0a, 0x0c, 0x50, 0x61, 0x73, 0x73, 0x70, 0x6f, 0x72, 0x74, 0x44, 0x61,
+	0x74, 0x61, 0x22, 0x19, 0x0a, 0x17, 0x50, 0x72, 0x6f, 0x78, 0x69, 0x6d, 0x69, 0x74, 0x79, 0x41,
+	0x6c, 0x65, 0x72, 0x74, 0x54, 0x72, 0x69, 0x67, 0x67, 0x65, 0x72, 0x65, 0x64, 0x22, 0x10, 0x0a,
+	0x0e, 0x43, 0x68, 0x61, 0x74, 0x42, 0x6f, 0x6f, 0x73, 0x74, 0x41, 0x64, 0x64, 0x65, 0x64, 0x22,
+	0x10, 0x0a, 0x0e, 0x43, 0x68, 0x61, 0x74, 0x42, 0x61, 0x63, 0x6b, 0x67, 0x72, 0x6f, 0x75, 0x6e,
+	0x64, 0x22, 0x13, 0x0a, 0x11, 0x46, 0x6f, 0x72, 0x75, 0x6d, 0x54, 0x6f, 0x70, 0x69, 0x63, 0x43,
+	0x72, 0x65, 0x61, 0x74, 0x65, 0x64, 0x22, 0x12, 0x0a, 0x10, 0x46, 0x6f, 0x72, 0x75, 0x6d, 0x54,
+	0x6f, 0x70, 0x69, 0x63, 0x45, 0x64, 0x69, 0x74, 0x65, 0x64, 0x22, 0x12, 0x0a, 0x10, 0x46, 0x6f,
+	0x72, 0x75, 0x6d, 0x54, 0x6f, 0x70, 0x69, 0x63, 0x43, 0x6c, 0x6f, 0x73, 0x65, 0x64, 0x22, 0x14,
+	0x0a, 0x12, 0x46, 0x6f, 0x72, 0x75, 0x6d, 0x54, 0x6f, 0x70, 0x69, 0x63, 0x52, 0x65, 0x6f, 0x70,
+	0x65, 0x6e, 0x65, 0x64, 0x22, 0x19, 0x0a, 0x17, 0x47, 0x65, 0x6e, 0x65, 0x72, 0x61, 0x6c, 0x46,
+	0x6f, 0x72, 0x75, 0x6d, 0x54, 0x6f, 0x70, 0x69, 0x63, 0x48, 0x69, 0x64, 0x64, 0x65, 0x6e, 0x22,
+	0x1b, 0x0a, 0x19, 0x47, 0x65, 0x6e, 0x65, 0x72, 0x61, 0x6c, 0x46, 0x6f, 0x72, 0x75, 0x6d, 0x54,
+	0x6f, 0x70, 0x69, 0x63, 0x55, 0x6e, 0x68, 0x69, 0x64, 0x64, 0x65, 0x6e, 0x22, 0x11, 0x0a, 0x0f,
+	0x47, 0x69, 0x76, 0x65, 0x61, 0x77, 0x61, 0x79, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x64, 0x22,
+	0x0a, 0x0a, 0x08, 0x47, 0x69, 0x76, 0x65, 0x61, 0x77, 0x61, 0x79, 0x22, 0x11, 0x0a, 0x0f, 0x47,
+	0x69, 0x76, 0x65, 0x61, 0x77, 0x61, 0x79, 0x57, 0x69, 0x6e, 0x6e, 0x65, 0x72, 0x73, 0x22, 0x13,
+	0x0a, 0x11, 0x47, 0x69, 0x76, 0x65, 0x61, 0x77, 0x61, 0x79, 0x43, 0x6f, 0x6d, 0x70, 0x6c, 0x65,
+	0x74, 0x65, 0x64, 0x22, 0x14, 0x0a, 0x12, 0x56, 0x69, 0x64, 0x65, 0x6f, 0x43, 0x68, 0x61, 0x74,
+	0x53, 0x63, 0x68, 0x65, 0x64, 0x75, 0x6c, 0x65, 0x64, 0x22, 0x12, 0x0a, 0x10, 0x56, 0x69, 0x64,
+	0x65, 0x6f, 0x43, 0x68, 0x61, 0x74, 0x53, 0x74, 0x61, 0x72, 0x74, 0x65, 0x64, 0x22, 0x10, 0x0a,
+	0x0e, 0x56, 0x69, 0x64, 0x65, 0x6f, 0x43, 0x68, 0x61, 0x74, 0x45, 0x6e, 0x64, 0x65, 0x64, 0x22,
+	0x1e, 0x0a, 0x1c, 0x56, 0x69, 0x64, 0x65, 0x6f, 0x43, 0x68, 0x61, 0x74, 0x50, 0x61, 0x72, 0x74,
+	0x69, 0x63, 0x69, 0x70, 0x61, 0x6e, 0x74, 0x73, 0x49, 0x6e, 0x76, 0x69, 0x74, 0x65, 0x64, 0x22,
+	0x0c, 0x0a, 0x0a, 0x57, 0x65, 0x62, 0x41, 0x70, 0x70, 0x44, 0x61, 0x74, 0x61, 0x22, 0x1f, 0x0a,
+	0x1d, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x41, 0x75, 0x74, 0x6f, 0x44, 0x65, 0x6c, 0x65,
+	0x74, 0x65, 0x54, 0x69, 0x6d, 0x65, 0x72, 0x43, 0x68, 0x61, 0x6e, 0x67, 0x65, 0x64, 0x22, 0x14,
+	0x0a, 0x12, 0x42, 0x75, 0x73, 0x69, 0x6e, 0x65, 0x73, 0x73, 0x43, 0x6f, 0x6e, 0x6e, 0x65, 0x63,
+	0x74, 0x69, 0x6f, 0x6e, 0x22, 0x19, 0x0a, 0x17, 0x42, 0x75, 0x73, 0x69, 0x6e, 0x65, 0x73, 0x73,
+	0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x73, 0x44, 0x65, 0x6c, 0x65, 0x74, 0x65, 0x64, 0x22,
+	0x18, 0x0a, 0x16, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x52, 0x65, 0x61, 0x63, 0x74, 0x69,
+	0x6f, 0x6e, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x64, 0x22, 0x1d, 0x0a, 0x1b, 0x4d, 0x65, 0x73,
+	0x73, 0x61, 0x67, 0x65, 0x52, 0x65, 0x61, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x43, 0x6f, 0x75, 0x6e,
+	0x74, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x64, 0x22, 0x0d, 0x0a, 0x0b, 0x49, 0x6e, 0x6c, 0x69,
+	0x6e, 0x65, 0x51, 0x75, 0x65, 0x72, 0x79, 0x22, 0x14, 0x0a, 0x12, 0x43, 0x68, 0x6f, 0x73, 0x65,
+	0x6e, 0x49, 0x6e, 0x6c, 0x69, 0x6e, 0x65, 0x52, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x22, 0x0f, 0x0a,
+	0x0d, 0x53, 0x68, 0x69, 0x70, 0x70, 0x69, 0x6e, 0x67, 0x51, 0x75, 0x65, 0x72, 0x79, 0x22, 0x12,
+	0x0a, 0x10, 0x50, 0x72, 0x65, 0x43, 0x68, 0x65, 0x63, 0x6b, 0x6f, 0x75, 0x74, 0x51, 0x75, 0x65,
+	0x72, 0x79, 0x22, 0x0c, 0x0a, 0x0a, 0x50, 0x6f, 0x6c, 0x6c, 0x41, 0x6e, 0x73, 0x77, 0x65, 0x72,
+	0x22, 0x13, 0x0a, 0x11, 0x43, 0x68, 0x61, 0x74, 0x4d, 0x65, 0x6d, 0x62, 0x65, 0x72, 0x55, 0x70,
+	0x64, 0x61, 0x74, 0x65, 0x64, 0x22, 0x11, 0x0a, 0x0f, 0x43, 0x68, 0x61, 0x74, 0x4a, 0x6f, 0x69,
+	0x6e, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x22, 0x12, 0x0a, 0x10, 0x43, 0x68, 0x61, 0x74,
+	0x42, 0x6f, 0x6f, 0x73, 0x74, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x64, 0x22, 0x12, 0x0a, 0x10,
+	0x43, 0x68, 0x61, 0x74, 0x42, 0x6f, 0x6f, 0x73, 0x74, 0x52, 0x65, 0x6d, 0x6f, 0x76, 0x65, 0x64,
+	0x22, 0x16, 0x0a, 0x14, 0x49, 0x6e, 0x6c, 0x69, 0x6e, 0x65, 0x4b, 0x65, 0x79, 0x62, 0x6f, 0x61,
+	0x72, 0x64, 0x4d, 0x61, 0x72, 0x6b, 0x75, 0x70, 0x22, 0x15, 0x0a, 0x13, 0x52, 0x65, 0x70, 0x6c,
+	0x79, 0x4b, 0x65, 0x79, 0x62, 0x6f, 0x61, 0x72, 0x64, 0x4d, 0x61, 0x72, 0x6b, 0x75, 0x70, 0x22,
+	0x15, 0x0a, 0x13, 0x52, 0x65, 0x70, 0x6c, 0x79, 0x4b, 0x65, 0x79, 0x62, 0x6f, 0x61, 0x72, 0x64,
+	0x52, 0x65, 0x6d, 0x6f, 0x76, 0x65, 0x22, 0x0c, 0x0a, 0x0a, 0x46, 0x6f, 0x72, 0x63, 0x65, 0x52,
+	0x65, 0x70, 0x6c, 0x79, 0x22, 0x95, 0x02, 0x0a, 0x0b, 0x52, 0x65, 0x70, 0x6c, 0x79, 0x4d, 0x61,
 	0x72, 0x6b, 0x75, 0x70, 0x12, 0x43, 0x0a, 0x0f, 0x69, 0x6e, 0x6c, 0x69, 0x6e, 0x65, 0x5f, 0x6b,
 	0x65, 0x79, 0x62, 0x6f, 0x61, 0x72, 0x64, 0x18, 0x01, 0x20, 0x01, 0x28, 0x0b, 0x32, 0x18, 0x2e,
 	0x70, 0x62, 0x2e, 0x49, 0x6e, 0x6c, 0x69, 0x6e, 0x65, 0x4b, 0x65, 0x79, 0x62, 0x6f, 0x61, 0x72,
@@ -2714,7 +2595,7 @@ func file_misc_proto_rawDescGZIP() []byte {
 	return file_misc_proto_rawDescData
 }
 
-var file_misc_proto_msgTypes = make([]protoimpl.MessageInfo, 66)
+var file_misc_proto_msgTypes = make([]protoimpl.MessageInfo, 63)
 var file_misc_proto_goTypes = []any{
 	(*MessageOrigin)(nil),                 // 0: pb.MessageOrigin
 	(*ExternalReplyInfo)(nil),             // 1: pb.ExternalReplyInfo
@@ -2735,59 +2616,56 @@ var file_misc_proto_goTypes = []any{
 	(*Poll)(nil),                          // 16: pb.Poll
 	(*Venue)(nil),                         // 17: pb.Venue
 	(*Location)(nil),                      // 18: pb.Location
-	(*MaybeInaccessibleMessage)(nil),      // 19: pb.MaybeInaccessibleMessage
-	(*Invoice)(nil),                       // 20: pb.Invoice
-	(*SuccessfulPayment)(nil),             // 21: pb.SuccessfulPayment
-	(*RefundedPayment)(nil),               // 22: pb.RefundedPayment
-	(*UsersShared)(nil),                   // 23: pb.UsersShared
-	(*ChatShared)(nil),                    // 24: pb.ChatShared
-	(*WriteAccessAllowed)(nil),            // 25: pb.WriteAccessAllowed
-	(*PassportData)(nil),                  // 26: pb.PassportData
-	(*ProximityAlertTriggered)(nil),       // 27: pb.ProximityAlertTriggered
-	(*ChatBoostAdded)(nil),                // 28: pb.ChatBoostAdded
-	(*ChatBackground)(nil),                // 29: pb.ChatBackground
-	(*ForumTopicCreated)(nil),             // 30: pb.ForumTopicCreated
-	(*ForumTopicEdited)(nil),              // 31: pb.ForumTopicEdited
-	(*ForumTopicClosed)(nil),              // 32: pb.ForumTopicClosed
-	(*ForumTopicReopened)(nil),            // 33: pb.ForumTopicReopened
-	(*GeneralForumTopicHidden)(nil),       // 34: pb.GeneralForumTopicHidden
-	(*GeneralForumTopicUnhidden)(nil),     // 35: pb.GeneralForumTopicUnhidden
-	(*GiveawayCreated)(nil),               // 36: pb.GiveawayCreated
-	(*Giveaway)(nil),                      // 37: pb.Giveaway
-	(*GiveawayWinners)(nil),               // 38: pb.GiveawayWinners
-	(*GiveawayCompleted)(nil),             // 39: pb.GiveawayCompleted
-	(*VideoChatScheduled)(nil),            // 40: pb.VideoChatScheduled
-	(*VideoChatStarted)(nil),              // 41: pb.VideoChatStarted
-	(*VideoChatEnded)(nil),                // 42: pb.VideoChatEnded
-	(*VideoChatParticipantsInvited)(nil),  // 43: pb.VideoChatParticipantsInvited
-	(*WebAppData)(nil),                    // 44: pb.WebAppData
-	(*MessageAutoDeleteTimerChanged)(nil), // 45: pb.MessageAutoDeleteTimerChanged
-	(*BusinessConnection)(nil),            // 46: pb.BusinessConnection
-	(*BusinessMessagesDeleted)(nil),       // 47: pb.BusinessMessagesDeleted
-	(*MessageReactionUpdated)(nil),        // 48: pb.MessageReactionUpdated
-	(*MessageReactionCountUpdated)(nil),   // 49: pb.MessageReactionCountUpdated
-	(*InlineQuery)(nil),                   // 50: pb.InlineQuery
-	(*ChosenInlineResult)(nil),            // 51: pb.ChosenInlineResult
-	(*CallbackQuery)(nil),                 // 52: pb.CallbackQuery
-	(*ShippingQuery)(nil),                 // 53: pb.ShippingQuery
-	(*PreCheckoutQuery)(nil),              // 54: pb.PreCheckoutQuery
-	(*PollAnswer)(nil),                    // 55: pb.PollAnswer
-	(*ChatMemberUpdated)(nil),             // 56: pb.ChatMemberUpdated
-	(*ChatJoinRequest)(nil),               // 57: pb.ChatJoinRequest
-	(*ChatBoostUpdated)(nil),              // 58: pb.ChatBoostUpdated
-	(*ChatBoostRemoved)(nil),              // 59: pb.ChatBoostRemoved
-	(*InlineKeyboardMarkup)(nil),          // 60: pb.InlineKeyboardMarkup
-	(*ReplyKeyboardMarkup)(nil),           // 61: pb.ReplyKeyboardMarkup
-	(*ReplyKeyboardRemove)(nil),           // 62: pb.ReplyKeyboardRemove
-	(*ForceReply)(nil),                    // 63: pb.ForceReply
-	(*ReplyParameters)(nil),               // 64: pb.ReplyParameters
-	(*ReplyMarkup)(nil),                   // 65: pb.ReplyMarkup
+	(*Invoice)(nil),                       // 19: pb.Invoice
+	(*SuccessfulPayment)(nil),             // 20: pb.SuccessfulPayment
+	(*RefundedPayment)(nil),               // 21: pb.RefundedPayment
+	(*UsersShared)(nil),                   // 22: pb.UsersShared
+	(*ChatShared)(nil),                    // 23: pb.ChatShared
+	(*WriteAccessAllowed)(nil),            // 24: pb.WriteAccessAllowed
+	(*PassportData)(nil),                  // 25: pb.PassportData
+	(*ProximityAlertTriggered)(nil),       // 26: pb.ProximityAlertTriggered
+	(*ChatBoostAdded)(nil),                // 27: pb.ChatBoostAdded
+	(*ChatBackground)(nil),                // 28: pb.ChatBackground
+	(*ForumTopicCreated)(nil),             // 29: pb.ForumTopicCreated
+	(*ForumTopicEdited)(nil),              // 30: pb.ForumTopicEdited
+	(*ForumTopicClosed)(nil),              // 31: pb.ForumTopicClosed
+	(*ForumTopicReopened)(nil),            // 32: pb.ForumTopicReopened
+	(*GeneralForumTopicHidden)(nil),       // 33: pb.GeneralForumTopicHidden
+	(*GeneralForumTopicUnhidden)(nil),     // 34: pb.GeneralForumTopicUnhidden
+	(*GiveawayCreated)(nil),               // 35: pb.GiveawayCreated
+	(*Giveaway)(nil),                      // 36: pb.Giveaway
+	(*GiveawayWinners)(nil),               // 37: pb.GiveawayWinners
+	(*GiveawayCompleted)(nil),             // 38: pb.GiveawayCompleted
+	(*VideoChatScheduled)(nil),            // 39: pb.VideoChatScheduled
+	(*VideoChatStarted)(nil),              // 40: pb.VideoChatStarted
+	(*VideoChatEnded)(nil),                // 41: pb.VideoChatEnded
+	(*VideoChatParticipantsInvited)(nil),  // 42: pb.VideoChatParticipantsInvited
+	(*WebAppData)(nil),                    // 43: pb.WebAppData
+	(*MessageAutoDeleteTimerChanged)(nil), // 44: pb.MessageAutoDeleteTimerChanged
+	(*BusinessConnection)(nil),            // 45: pb.BusinessConnection
+	(*BusinessMessagesDeleted)(nil),       // 46: pb.BusinessMessagesDeleted
+	(*MessageReactionUpdated)(nil),        // 47: pb.MessageReactionUpdated
+	(*MessageReactionCountUpdated)(nil),   // 48: pb.MessageReactionCountUpdated
+	(*InlineQuery)(nil),                   // 49: pb.InlineQuery
+	(*ChosenInlineResult)(nil),            // 50: pb.ChosenInlineResult
+	(*ShippingQuery)(nil),                 // 51: pb.ShippingQuery
+	(*PreCheckoutQuery)(nil),              // 52: pb.PreCheckoutQuery
+	(*PollAnswer)(nil),                    // 53: pb.PollAnswer
+	(*ChatMemberUpdated)(nil),             // 54: pb.ChatMemberUpdated
+	(*ChatJoinRequest)(nil),               // 55: pb.ChatJoinRequest
+	(*ChatBoostUpdated)(nil),              // 56: pb.ChatBoostUpdated
+	(*ChatBoostRemoved)(nil),              // 57: pb.ChatBoostRemoved
+	(*InlineKeyboardMarkup)(nil),          // 58: pb.InlineKeyboardMarkup
+	(*ReplyKeyboardMarkup)(nil),           // 59: pb.ReplyKeyboardMarkup
+	(*ReplyKeyboardRemove)(nil),           // 60: pb.ReplyKeyboardRemove
+	(*ForceReply)(nil),                    // 61: pb.ForceReply
+	(*ReplyMarkup)(nil),                   // 62: pb.ReplyMarkup
 }
 var file_misc_proto_depIdxs = []int32{
-	60, // 0: pb.ReplyMarkup.inline_keyboard:type_name -> pb.InlineKeyboardMarkup
-	61, // 1: pb.ReplyMarkup.reply_keyboard:type_name -> pb.ReplyKeyboardMarkup
-	62, // 2: pb.ReplyMarkup.remove_keyboard:type_name -> pb.ReplyKeyboardRemove
-	63, // 3: pb.ReplyMarkup.force_reply:type_name -> pb.ForceReply
+	58, // 0: pb.ReplyMarkup.inline_keyboard:type_name -> pb.InlineKeyboardMarkup
+	59, // 1: pb.ReplyMarkup.reply_keyboard:type_name -> pb.ReplyKeyboardMarkup
+	60, // 2: pb.ReplyMarkup.remove_keyboard:type_name -> pb.ReplyKeyboardRemove
+	61, // 3: pb.ReplyMarkup.force_reply:type_name -> pb.ForceReply
 	4,  // [4:4] is the sub-list for method output_type
 	4,  // [4:4] is the sub-list for method input_type
 	4,  // [4:4] is the sub-list for extension type_name
@@ -3030,18 +2908,6 @@ func file_misc_proto_init() {
 			}
 		}
 		file_misc_proto_msgTypes[19].Exporter = func(v any, i int) any {
-			switch v := v.(*MaybeInaccessibleMessage); i {
-			case 0:
-				return &v.state
-			case 1:
-				return &v.sizeCache
-			case 2:
-				return &v.unknownFields
-			default:
-				return nil
-			}
-		}
-		file_misc_proto_msgTypes[20].Exporter = func(v any, i int) any {
 			switch v := v.(*Invoice); i {
 			case 0:
 				return &v.state
@@ -3053,7 +2919,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[21].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[20].Exporter = func(v any, i int) any {
 			switch v := v.(*SuccessfulPayment); i {
 			case 0:
 				return &v.state
@@ -3065,7 +2931,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[22].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[21].Exporter = func(v any, i int) any {
 			switch v := v.(*RefundedPayment); i {
 			case 0:
 				return &v.state
@@ -3077,7 +2943,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[23].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[22].Exporter = func(v any, i int) any {
 			switch v := v.(*UsersShared); i {
 			case 0:
 				return &v.state
@@ -3089,7 +2955,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[24].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[23].Exporter = func(v any, i int) any {
 			switch v := v.(*ChatShared); i {
 			case 0:
 				return &v.state
@@ -3101,7 +2967,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[25].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[24].Exporter = func(v any, i int) any {
 			switch v := v.(*WriteAccessAllowed); i {
 			case 0:
 				return &v.state
@@ -3113,7 +2979,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[26].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[25].Exporter = func(v any, i int) any {
 			switch v := v.(*PassportData); i {
 			case 0:
 				return &v.state
@@ -3125,7 +2991,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[27].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[26].Exporter = func(v any, i int) any {
 			switch v := v.(*ProximityAlertTriggered); i {
 			case 0:
 				return &v.state
@@ -3137,7 +3003,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[28].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[27].Exporter = func(v any, i int) any {
 			switch v := v.(*ChatBoostAdded); i {
 			case 0:
 				return &v.state
@@ -3149,7 +3015,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[29].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[28].Exporter = func(v any, i int) any {
 			switch v := v.(*ChatBackground); i {
 			case 0:
 				return &v.state
@@ -3161,7 +3027,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[30].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[29].Exporter = func(v any, i int) any {
 			switch v := v.(*ForumTopicCreated); i {
 			case 0:
 				return &v.state
@@ -3173,7 +3039,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[31].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[30].Exporter = func(v any, i int) any {
 			switch v := v.(*ForumTopicEdited); i {
 			case 0:
 				return &v.state
@@ -3185,7 +3051,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[32].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[31].Exporter = func(v any, i int) any {
 			switch v := v.(*ForumTopicClosed); i {
 			case 0:
 				return &v.state
@@ -3197,7 +3063,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[33].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[32].Exporter = func(v any, i int) any {
 			switch v := v.(*ForumTopicReopened); i {
 			case 0:
 				return &v.state
@@ -3209,7 +3075,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[34].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[33].Exporter = func(v any, i int) any {
 			switch v := v.(*GeneralForumTopicHidden); i {
 			case 0:
 				return &v.state
@@ -3221,7 +3087,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[35].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[34].Exporter = func(v any, i int) any {
 			switch v := v.(*GeneralForumTopicUnhidden); i {
 			case 0:
 				return &v.state
@@ -3233,7 +3099,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[36].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[35].Exporter = func(v any, i int) any {
 			switch v := v.(*GiveawayCreated); i {
 			case 0:
 				return &v.state
@@ -3245,7 +3111,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[37].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[36].Exporter = func(v any, i int) any {
 			switch v := v.(*Giveaway); i {
 			case 0:
 				return &v.state
@@ -3257,7 +3123,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[38].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[37].Exporter = func(v any, i int) any {
 			switch v := v.(*GiveawayWinners); i {
 			case 0:
 				return &v.state
@@ -3269,7 +3135,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[39].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[38].Exporter = func(v any, i int) any {
 			switch v := v.(*GiveawayCompleted); i {
 			case 0:
 				return &v.state
@@ -3281,7 +3147,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[40].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[39].Exporter = func(v any, i int) any {
 			switch v := v.(*VideoChatScheduled); i {
 			case 0:
 				return &v.state
@@ -3293,7 +3159,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[41].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[40].Exporter = func(v any, i int) any {
 			switch v := v.(*VideoChatStarted); i {
 			case 0:
 				return &v.state
@@ -3305,7 +3171,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[42].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[41].Exporter = func(v any, i int) any {
 			switch v := v.(*VideoChatEnded); i {
 			case 0:
 				return &v.state
@@ -3317,7 +3183,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[43].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[42].Exporter = func(v any, i int) any {
 			switch v := v.(*VideoChatParticipantsInvited); i {
 			case 0:
 				return &v.state
@@ -3329,7 +3195,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[44].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[43].Exporter = func(v any, i int) any {
 			switch v := v.(*WebAppData); i {
 			case 0:
 				return &v.state
@@ -3341,7 +3207,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[45].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[44].Exporter = func(v any, i int) any {
 			switch v := v.(*MessageAutoDeleteTimerChanged); i {
 			case 0:
 				return &v.state
@@ -3353,7 +3219,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[46].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[45].Exporter = func(v any, i int) any {
 			switch v := v.(*BusinessConnection); i {
 			case 0:
 				return &v.state
@@ -3365,7 +3231,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[47].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[46].Exporter = func(v any, i int) any {
 			switch v := v.(*BusinessMessagesDeleted); i {
 			case 0:
 				return &v.state
@@ -3377,7 +3243,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[48].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[47].Exporter = func(v any, i int) any {
 			switch v := v.(*MessageReactionUpdated); i {
 			case 0:
 				return &v.state
@@ -3389,7 +3255,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[49].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[48].Exporter = func(v any, i int) any {
 			switch v := v.(*MessageReactionCountUpdated); i {
 			case 0:
 				return &v.state
@@ -3401,7 +3267,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[50].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[49].Exporter = func(v any, i int) any {
 			switch v := v.(*InlineQuery); i {
 			case 0:
 				return &v.state
@@ -3413,7 +3279,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[51].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[50].Exporter = func(v any, i int) any {
 			switch v := v.(*ChosenInlineResult); i {
 			case 0:
 				return &v.state
@@ -3425,19 +3291,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[52].Exporter = func(v any, i int) any {
-			switch v := v.(*CallbackQuery); i {
-			case 0:
-				return &v.state
-			case 1:
-				return &v.sizeCache
-			case 2:
-				return &v.unknownFields
-			default:
-				return nil
-			}
-		}
-		file_misc_proto_msgTypes[53].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[51].Exporter = func(v any, i int) any {
 			switch v := v.(*ShippingQuery); i {
 			case 0:
 				return &v.state
@@ -3449,7 +3303,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[54].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[52].Exporter = func(v any, i int) any {
 			switch v := v.(*PreCheckoutQuery); i {
 			case 0:
 				return &v.state
@@ -3461,7 +3315,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[55].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[53].Exporter = func(v any, i int) any {
 			switch v := v.(*PollAnswer); i {
 			case 0:
 				return &v.state
@@ -3473,7 +3327,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[56].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[54].Exporter = func(v any, i int) any {
 			switch v := v.(*ChatMemberUpdated); i {
 			case 0:
 				return &v.state
@@ -3485,7 +3339,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[57].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[55].Exporter = func(v any, i int) any {
 			switch v := v.(*ChatJoinRequest); i {
 			case 0:
 				return &v.state
@@ -3497,7 +3351,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[58].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[56].Exporter = func(v any, i int) any {
 			switch v := v.(*ChatBoostUpdated); i {
 			case 0:
 				return &v.state
@@ -3509,7 +3363,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[59].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[57].Exporter = func(v any, i int) any {
 			switch v := v.(*ChatBoostRemoved); i {
 			case 0:
 				return &v.state
@@ -3521,7 +3375,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[60].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[58].Exporter = func(v any, i int) any {
 			switch v := v.(*InlineKeyboardMarkup); i {
 			case 0:
 				return &v.state
@@ -3533,7 +3387,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[61].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[59].Exporter = func(v any, i int) any {
 			switch v := v.(*ReplyKeyboardMarkup); i {
 			case 0:
 				return &v.state
@@ -3545,7 +3399,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[62].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[60].Exporter = func(v any, i int) any {
 			switch v := v.(*ReplyKeyboardRemove); i {
 			case 0:
 				return &v.state
@@ -3557,7 +3411,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[63].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[61].Exporter = func(v any, i int) any {
 			switch v := v.(*ForceReply); i {
 			case 0:
 				return &v.state
@@ -3569,19 +3423,7 @@ func file_misc_proto_init() {
 				return nil
 			}
 		}
-		file_misc_proto_msgTypes[64].Exporter = func(v any, i int) any {
-			switch v := v.(*ReplyParameters); i {
-			case 0:
-				return &v.state
-			case 1:
-				return &v.sizeCache
-			case 2:
-				return &v.unknownFields
-			default:
-				return nil
-			}
-		}
-		file_misc_proto_msgTypes[65].Exporter = func(v any, i int) any {
+		file_misc_proto_msgTypes[62].Exporter = func(v any, i int) any {
 			switch v := v.(*ReplyMarkup); i {
 			case 0:
 				return &v.state
@@ -3594,7 +3436,7 @@ func file_misc_proto_init() {
 			}
 		}
 	}
-	file_misc_proto_msgTypes[65].OneofWrappers = []any{
+	file_misc_proto_msgTypes[62].OneofWrappers = []any{
 		(*ReplyMarkup_InlineKeyboard)(nil),
 		(*ReplyMarkup_ReplyKeyboard)(nil),
 		(*ReplyMarkup_RemoveKeyboard)(nil),
@@ -3606,7 +3448,7 @@ func file_misc_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_misc_proto_rawDesc,
 			NumEnums:      0,
-			NumMessages:   66,
+			NumMessages:   63,
 			NumExtensions: 0,
 			NumServices:   0,
 		},

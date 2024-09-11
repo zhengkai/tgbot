@@ -4,7 +4,7 @@ package pb;
 
 
 message Chat {
-	uint64 id = 1;
+	int64 id = 1;
 	string first_name = 2;
 	string last_name = 3;
 	string username = 4;

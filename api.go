@@ -51,7 +51,7 @@ func (a *api) SendChatAction(m *pb.SendChatAction) {
 	httpPostJSON(url, m, nil)
 }
 
-func (a *api) SendMessage(m *pb.SendMessage) (*pb.Message, error) {
+func (a *api) SendMessage(m any) (*pb.Message, error) {
 	url := a.urlBase + `sendMessage`
 
 	re := &pb.Message{}

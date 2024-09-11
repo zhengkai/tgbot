@@ -1,0 +1,15 @@
+syntax = "proto3";
+option go_package = "/pb";
+package pb;
+
+import "misc.proto";
+
+message ReplyParameters {
+	uint64 message_id = 1;
+	string chat_id = 2;
+	bool allow_sending_without_reply = 3;
+	string quote = 4;
+	string quote_parse_mode = 5;
+	repeated MessageEntity quote_entities = 6;
+	uint64 quote_position = 7;
+}

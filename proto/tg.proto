@@ -1,0 +1,9 @@
+syntax = "proto3";
+option go_package = "/pb";
+package pb;
+
+message Error {
+	bool ok = 1;
+	uint32 error_code = 2;
+	string description = 3;
+}

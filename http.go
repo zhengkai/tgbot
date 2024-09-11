@@ -10,6 +10,7 @@ import (
 	"time"
 
 	jp "github.com/buger/jsonparser"
+	"github.com/zhengkai/tgbot/pb"
 
 	"google.golang.org/protobuf/proto"
 )
@@ -41,13 +42,11 @@ func httpGetJSON(url string, d any) error {
 		return err
 	}
 
-	fmt.Println(url, len(ab))
-
-	// fmt.Println(string(ab))
+	// fmt.Println(url, len(ab))
 
 	ok, err := jp.GetBoolean(ab, `ok`)
 	if !ok {
-		fmt.Println(string(ab))
+		// fmt.Println(string(ab))
 		return errors.New(`api fail: no "ok:true"`)
 	}
 
@@ -67,13 +66,13 @@ func httpGetJSON(url string, d any) error {
 	return nil
 }
 
-func httpPostJSON(url string, d proto.Message, re proto.Message) error {
+func httpPostJSON(url string, d any, re proto.Message) error {
 
 	ab, err := json.Marshal(d)
 	if err != nil {
 		return err
 	}
-	fmt.Println(`send:`, string(ab))
+	// fmt.Println(`send:`, string(ab))
 
 	req, err := http.NewRequest(http.MethodPost, url, bytes.NewReader(ab))
 	if err != nil {
@@ -87,16 +86,23 @@ func httpPostJSON(url string, d proto.Message, re proto.Message) error {
 	}
 	defer rsp.Body.Close()
 
-	if rsp.StatusCode < 200 || rsp.StatusCode >= 300 {
-		fmt.Println(rsp.StatusCode)
-		// return ErrHTTPCode
-	}
 	ab, err = io.ReadAll(rsp.Body)
 	if err != nil {
+
 		return ErrHTTPBody
 	}
 
-	fmt.Println(string(ab))
+	if rsp.StatusCode != http.StatusOK {
+		fmt.Println(`http code not ok`, rsp.StatusCode)
+		o := &pb.Error{}
+		e2 := json.Unmarshal(ab, o)
+		if e2 != nil {
+			return ErrHTTPCode
+		}
+
+		// fmt.Println(rsp.StatusCode)
+		return errors.New(o.Description)
+	}
 
 	if re == nil {
 		return nil
@@ -106,5 +112,21 @@ func httpPostJSON(url string, d proto.Message, re proto.Message) error {
 }
 
 func httpFetch(url string, w io.Writer) error {
+
+	resp, err := http.Get(url)
+	if err != nil {
+		return fmt.Errorf(`failed to initiate request: %v`, err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		return fmt.Errorf(`bad status: %s`, resp.Status)
+	}
+
+	_, err = io.Copy(w, resp.Body)
+	if err != nil {
+		return fmt.Errorf(`failed to copy response body: %v`, err)
+	}
+
 	return nil
 }

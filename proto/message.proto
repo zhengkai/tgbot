@@ -6,44 +6,46 @@ import "misc.proto";
 import "user.proto";
 import "chat.proto";
 import "document.proto";
+import "reply.proto";
 
 // Message representing a request to send a message.
 message SendMessage {
-  // Unique identifier of the business connection on behalf of which the message will be sent
-  string business_connection_id = 1;
 
-  // Unique identifier for the target chat or username of the target channel (in the format @channelusername)
-  string chat_id = 2;
+	// Unique identifier of the business connection on behalf of which the message will be sent
+	string business_connection_id = 1;
 
-  // Unique identifier for the target message thread (topic) of the forum; for forum supergroups only
-  uint64 message_thread_id = 3;
+	// Unique identifier for the target chat or username of the target channel (in the format @channelusername)
+	string chat_id = 2;
 
-  // Text of the message to be sent, 1-4096 characters after entities parsing
-  string text = 4;
+	// Unique identifier for the target message thread (topic) of the forum; for forum supergroups only
+	uint64 message_thread_id = 3;
 
-  // Mode for parsing entities in the message text. See formatting options for more details
-  string parse_mode = 5;
+	// Text of the message to be sent, 1-4096 characters after entities parsing
+	string text = 4;
 
-  // A list of special entities that appear in message text, which can be specified instead of parse_mode
-  repeated MessageEntity entities = 6;
+	// Mode for parsing entities in the message text. See formatting options for more details
+	string parse_mode = 5;
 
-  // Link preview generation options for the message
-  LinkPreviewOptions link_preview_options = 7;
+	// A list of special entities that appear in message text, which can be specified instead of parse_mode
+	repeated MessageEntity entities = 6;
 
-  // Sends the message silently. Users will receive a notification with no sound
-  bool disable_notification = 8;
+	// Link preview generation options for the message
+	LinkPreviewOptions link_preview_options = 7;
 
-  // Protects the contents of the sent message from forwarding and saving
-  bool protect_content = 9;
+	// Sends the message silently. Users will receive a notification with no sound
+	bool disable_notification = 8;
 
-  // Unique identifier of the message effect to be added to the message; for private chats only
-  string message_effect_id = 10;
+	// Protects the contents of the sent message from forwarding and saving
+	bool protect_content = 9;
 
-  // Description of the message to reply to
-  ReplyParameters reply_parameters = 11;
+	// Unique identifier of the message effect to be added to the message; for private chats only
+	string message_effect_id = 10;
 
-  // Additional interface options. A serialized object for an inline keyboard, custom reply keyboard, instructions to remove a reply keyboard or to force a reply from the user
-  ReplyMarkup reply_markup = 12;
+	// Description of the message to reply to
+	ReplyParameters reply_parameters = 11;
+
+	// Additional interface options. A serialized object for an inline keyboard, custom reply keyboard, instructions to remove a reply keyboard or to force a reply from the user
+	ReplyMarkup reply_markup = 12;
 }
 
 message SendChatAction {
@@ -55,173 +57,192 @@ message SendChatAction {
 
 // Define messages for InlineKeyboardMarkup, ReplyKeyboardMarkup, ReplyKeyboardRemove, and ForceReply as required.
 message Message {
-    uint64 message_id = 1; // Unique message identifier inside this chat
 
-    uint64 message_thread_id = 2; // Optional. Unique identifier of a message thread to which the message belongs; for supergroups only
+	uint64 message_id = 1; // Unique message identifier inside this chat
 
-    User from = 3; // Optional. Sender of the message; may be empty for messages sent to channels. For backward compatibility, if the message was sent on behalf of a chat, the field contains a fake sender user in non-channel chats
+	uint64 message_thread_id = 2; // Optional. Unique identifier of a message thread to which the message belongs; for supergroups only
 
-    Chat sender_chat = 4; // Optional. Sender of the message when sent on behalf of a chat. For example, the supergroup itself for messages sent by its anonymous administrators or a linked channel for messages automatically forwarded to the channel's discussion group. For backward compatibility, if the message was sent on behalf of a chat, the field from contains a fake sender user in non-channel chats.
+	User from = 3; // Optional. Sender of the message; may be empty for messages sent to channels. For backward compatibility, if the message was sent on behalf of a chat, the field contains a fake sender user in non-channel chats
 
-    uint64 sender_boost_count = 5; // Optional. If the sender of the message boosted the chat, the number of boosts added by the user
+	Chat sender_chat = 4; // Optional. Sender of the message when sent on behalf of a chat. For example, the supergroup itself for messages sent by its anonymous administrators or a linked channel for messages automatically forwarded to the channel's discussion group. For backward compatibility, if the message was sent on behalf of a chat, the field from contains a fake sender user in non-channel chats.
 
-    User sender_business_bot = 6; // Optional. The bot that actually sent the message on behalf of the business account. Available only for outgoing messages sent on behalf of the connected business account.
+	uint64 sender_boost_count = 5; // Optional. If the sender of the message boosted the chat, the number of boosts added by the user
 
-    fixed32 date = 7; // Date the message was sent in Unix time. It is always a positive number, representing a valid date.
+	User sender_business_bot = 6; // Optional. The bot that actually sent the message on behalf of the business account. Available only for outgoing messages sent on behalf of the connected business account.
 
-    string business_connection_id = 8; // Optional. Unique identifier of the business connection from which the message was received. If non-empty, the message belongs to a chat of the corresponding business account that is independent from any potential bot chat which might share the same identifier.
+	fixed32 date = 7; // Date the message was sent in Unix time. It is always a positive number, representing a valid date.
 
-    Chat chat = 9; // Chat the message belongs to
+	string business_connection_id = 8; // Optional. Unique identifier of the business connection from which the message was received. If non-empty, the message belongs to a chat of the corresponding business account that is independent from any potential bot chat which might share the same identifier.
 
-    MessageOrigin forward_origin = 10; // Optional. Information about the original message for forwarded messages
+	Chat chat = 9; // Chat the message belongs to
 
-    bool is_topic_message = 11; // Optional. True, if the message is sent to a forum topic
+	MessageOrigin forward_origin = 10; // Optional. Information about the original message for forwarded messages
 
-    bool is_automatic_forward = 12; // Optional. True, if the message is a channel post that was automatically forwarded to the connected discussion group
+	bool is_topic_message = 11; // Optional. True, if the message is sent to a forum topic
 
-    Message reply_to_message = 13; // Optional. For replies in the same chat and message thread, the original message. Note that the Message object in this field will not contain further reply_to_message fields even if it itself is a reply.
+	bool is_automatic_forward = 12; // Optional. True, if the message is a channel post that was automatically forwarded to the connected discussion group
 
-    ExternalReplyInfo external_reply = 14; // Optional. Information about the message that is being replied to, which may come from another chat or forum topic
+	Message reply_to_message = 13; // Optional. For replies in the same chat and message thread, the original message. Note that the Message object in this field will not contain further reply_to_message fields even if it itself is a reply.
 
-    TextQuote quote = 15; // Optional. For replies that quote part of the original message, the quoted part of the message
+	ExternalReplyInfo external_reply = 14; // Optional. Information about the message that is being replied to, which may come from another chat or forum topic
 
-    Story reply_to_story = 16; // Optional. For replies to a story, the original story
+	TextQuote quote = 15; // Optional. For replies that quote part of the original message, the quoted part of the message
 
-    User via_bot = 17; // Optional. Bot through which the message was sent
+	Story reply_to_story = 16; // Optional. For replies to a story, the original story
 
-    fixed32 edit_date = 18; // Optional. Date the message was last edited in Unix time
+	User via_bot = 17; // Optional. Bot through which the message was sent
 
-    bool has_protected_content = 19; // Optional. True, if the message can't be forwarded
+	fixed32 edit_date = 18; // Optional. Date the message was last edited in Unix time
 
-    bool is_from_offline = 20; // Optional. True, if the message was sent by an implicit action, for example, as an away or a greeting business message, or as a scheduled message
+	bool has_protected_content = 19; // Optional. True, if the message can't be forwarded
 
-    string media_group_id = 21; // Optional. The unique identifier of a media message group this message belongs to
+	bool is_from_offline = 20; // Optional. True, if the message was sent by an implicit action, for example, as an away or a greeting business message, or as a scheduled message
 
-    string author_signature = 22; // Optional. Signature of the post author for messages in channels, or the custom title of an anonymous group administrator
+	string media_group_id = 21; // Optional. The unique identifier of a media message group this message belongs to
 
-    string text = 23; // Optional. For text messages, the actual UTF-8 text of the message
+	string author_signature = 22; // Optional. Signature of the post author for messages in channels, or the custom title of an anonymous group administrator
 
-    repeated MessageEntity entities = 24; // Optional. For text messages, special entities like usernames, URLs, bot commands, etc. that appear in the text
+	string text = 23; // Optional. For text messages, the actual UTF-8 text of the message
 
-    LinkPreviewOptions link_preview_options = 25; // Optional. Options used for link preview generation for the message, if it is a text message and link preview options were changed
+	repeated MessageEntity entities = 24; // Optional. For text messages, special entities like usernames, URLs, bot commands, etc. that appear in the text
 
-    string effect_id = 26; // Optional. Unique identifier of the message effect added to the message
+	LinkPreviewOptions link_preview_options = 25; // Optional. Options used for link preview generation for the message, if it is a text message and link preview options were changed
 
-    Animation animation = 27; // Optional. Message is an animation, information about the animation. For backward compatibility, when this field is set, the document field will also be set
+	string effect_id = 26; // Optional. Unique identifier of the message effect added to the message
 
-    Audio audio = 28; // Optional. Message is an audio file, information about the file
+	Animation animation = 27; // Optional. Message is an animation, information about the animation. For backward compatibility, when this field is set, the document field will also be set
 
-    Document document = 29; // Optional. Message is a general file, information about the file
+	Audio audio = 28; // Optional. Message is an audio file, information about the file
 
-    PaidMediaInfo paid_media = 30; // Optional. Message contains paid media; information about the paid media
+	Document document = 29; // Optional. Message is a general file, information about the file
 
-    repeated PhotoSize photo = 31; // Optional. Message is a photo, available sizes of the photo
+	PaidMediaInfo paid_media = 30; // Optional. Message contains paid media; information about the paid media
 
-    Sticker sticker = 32; // Optional. Message is a sticker, information about the sticker
+	repeated PhotoSize photo = 31; // Optional. Message is a photo, available sizes of the photo
 
-    Story story = 33; // Optional. Message is a forwarded story
+	Sticker sticker = 32; // Optional. Message is a sticker, information about the sticker
 
-    Video video = 34; // Optional. Message is a video, information about the video
+	Story story = 33; // Optional. Message is a forwarded story
 
-    VideoNote video_note = 35; // Optional. Message is a video note, information about the video message
+	Video video = 34; // Optional. Message is a video, information about the video
 
-    Voice voice = 36; // Optional. Message is a voice message, information about the file
+	VideoNote video_note = 35; // Optional. Message is a video note, information about the video message
 
-    string caption = 37; // Optional. Caption for the animation, audio, document, paid media, photo, video or voice
+	Voice voice = 36; // Optional. Message is a voice message, information about the file
 
-    repeated MessageEntity caption_entities = 38; // Optional. For messages with a caption, special entities like usernames, URLs, bot commands, etc. that appear in the caption
+	string caption = 37; // Optional. Caption for the animation, audio, document, paid media, photo, video or voice
 
-    bool show_caption_above_media = 39; // Optional. True, if the caption must be shown above the message media
+	repeated MessageEntity caption_entities = 38; // Optional. For messages with a caption, special entities like usernames, URLs, bot commands, etc. that appear in the caption
 
-    bool has_media_spoiler = 40; // Optional. True, if the message media is covered by a spoiler animation
+	bool show_caption_above_media = 39; // Optional. True, if the caption must be shown above the message media
 
-    Contact contact = 41; // Optional. Message is a shared contact, information about the contact
+	bool has_media_spoiler = 40; // Optional. True, if the message media is covered by a spoiler animation
 
-    Dice dice = 42; // Optional. Message is a dice with random value
+	Contact contact = 41; // Optional. Message is a shared contact, information about the contact
 
-    Game game = 43; // Optional. Message is a game, information about the game. More about games »
+	Dice dice = 42; // Optional. Message is a dice with random value
 
-    Poll poll = 44; // Optional. Message is a native poll, information about the poll
+	Game game = 43; // Optional. Message is a game, information about the game. More about games »
 
-    Venue venue = 45; // Optional. Message is a venue, information about the venue. For backward compatibility, when this field is set, the location field will also be set
+	Poll poll = 44; // Optional. Message is a native poll, information about the poll
 
-    Location location = 46; // Optional. Message is a shared location, information about the location
+	Venue venue = 45; // Optional. Message is a venue, information about the venue. For backward compatibility, when this field is set, the location field will also be set
 
-    repeated User new_chat_members = 47; // Optional. New members that were added to the group or supergroup and information about them (the bot itself may be one of these members)
+	Location location = 46; // Optional. Message is a shared location, information about the location
 
-    User left_chat_member = 48; // Optional. A member was removed from the group, information about them (this member may be the bot itself)
+	repeated User new_chat_members = 47; // Optional. New members that were added to the group or supergroup and information about them (the bot itself may be one of these members)
 
-    string new_chat_title = 49; // Optional. A chat title was changed to this value
+	User left_chat_member = 48; // Optional. A member was removed from the group, information about them (this member may be the bot itself)
 
-    repeated PhotoSize new_chat_photo = 50; // Optional. A chat photo was change to this value
+	string new_chat_title = 49; // Optional. A chat title was changed to this value
 
-    bool delete_chat_photo = 51; // Optional. Service message: the chat photo was deleted
+	repeated PhotoSize new_chat_photo = 50; // Optional. A chat photo was change to this value
 
-    bool group_chat_created = 52; // Optional. Service message: the group has been created
+	bool delete_chat_photo = 51; // Optional. Service message: the chat photo was deleted
 
-    bool supergroup_chat_created = 53; // Optional. Service message: the supergroup has been created. This field can't be received in a message coming through updates, because bot can't be a member of a supergroup when it is created. It can only be found in reply_to_message if someone replies to a very first message in a directly created supergroup.
+	bool group_chat_created = 52; // Optional. Service message: the group has been created
 
-    bool channel_chat_created = 54; // Optional. Service message: the channel has been created. This field can't be received in a message coming through updates, because bot can't be a member of a channel when it is created. It can only be found in reply_to_message if someone replies to a very first message in a channel.
+	bool supergroup_chat_created = 53; // Optional. Service message: the supergroup has been created. This field can't be received in a message coming through updates, because bot can't be a member of a supergroup when it is created. It can only be found in reply_to_message if someone replies to a very first message in a directly created supergroup.
 
-    MessageAutoDeleteTimerChanged message_auto_delete_timer_changed = 55; // Optional. Service message: auto-delete timer settings changed in the chat
+	bool channel_chat_created = 54; // Optional. Service message: the channel has been created. This field can't be received in a message coming through updates, because bot can't be a member of a channel when it is created. It can only be found in reply_to_message if someone replies to a very first message in a channel.
 
-    uint64 migrate_to_chat_id = 56; // Optional. The group has been migrated to a supergroup with the specified identifier. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a signed 64-bit integer or double-precision float type are safe for storing this identifier.
+	MessageAutoDeleteTimerChanged message_auto_delete_timer_changed = 55; // Optional. Service message: auto-delete timer settings changed in the chat
 
-    uint64 migrate_from_chat_id = 57; // Optional. The supergroup has been migrated from a group with the specified identifier. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a signed 64-bit integer or double-precision float type are safe for storing this identifier.
+	uint64 migrate_to_chat_id = 56; // Optional. The group has been migrated to a supergroup with the specified identifier. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a signed 64-bit integer or double-precision float type are safe for storing this identifier.
 
-    MaybeInaccessibleMessage pinned_message = 58; // Optional. Specified message was pinned. Note that the Message object in this field will not contain further reply_to_message fields even if it itself is a reply.
+	uint64 migrate_from_chat_id = 57; // Optional. The supergroup has been migrated from a group with the specified identifier. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a signed 64-bit integer or double-precision float type are safe for storing this identifier.
 
-    Invoice invoice = 59; // Optional. Message is an invoice for a payment, information about the invoice. More about payments »
+	Message pinned_message = 58; // Optional. Specified message was pinned. Note that the Message object in this field will not contain further reply_to_message fields even if it itself is a reply.
 
-    SuccessfulPayment successful_payment = 60; // Optional. Message is a service message about a successful payment, information about the payment. More about payments »
+	Invoice invoice = 59; // Optional. Message is an invoice for a payment, information about the invoice. More about payments »
 
-    RefundedPayment refunded_payment = 61; // Optional. Message is a service message about a refunded payment, information about the payment. More about payments »
+	SuccessfulPayment successful_payment = 60; // Optional. Message is a service message about a successful payment, information about the payment. More about payments »
 
-    UsersShared users_shared = 62; // Optional. Service message: users were shared with the bot
+	RefundedPayment refunded_payment = 61; // Optional. Message is a service message about a refunded payment, information about the payment. More about payments »
 
-    ChatShared chat_shared = 63; // Optional. Service message: a chat was shared with the bot
+	UsersShared users_shared = 62; // Optional. Service message: users were shared with the bot
 
-    string connected_website = 64; // Optional. The domain name of the website on which the user has logged in. More about Telegram Login »
+	ChatShared chat_shared = 63; // Optional. Service message: a chat was shared with the bot
 
-    WriteAccessAllowed write_access_allowed = 65; // Optional. Service message: the user allowed the bot to write messages after adding it to the attachment or side menu, launching a Web App from a link, or accepting an explicit request from a Web App sent by the method requestWriteAccess
+	string connected_website = 64; // Optional. The domain name of the website on which the user has logged in. More about Telegram Login »
 
-    PassportData passport_data = 66; // Optional. Telegram Passport data
+	WriteAccessAllowed write_access_allowed = 65; // Optional. Service message: the user allowed the bot to write messages after adding it to the attachment or side menu, launching a Web App from a link, or accepting an explicit request from a Web App sent by the method requestWriteAccess
 
-    ProximityAlertTriggered proximity_alert_triggered = 67; // Optional. Service message. A user in the chat triggered another user's proximity alert while sharing Live Location.
+	PassportData passport_data = 66; // Optional. Telegram Passport data
 
-    ChatBoostAdded boost_added = 68; // Optional. Service message: user boosted the chat
+	ProximityAlertTriggered proximity_alert_triggered = 67; // Optional. Service message. A user in the chat triggered another user's proximity alert while sharing Live Location.
 
-    ChatBackground chat_background_set = 69; // Optional. Service message: chat background set
+	ChatBoostAdded boost_added = 68; // Optional. Service message: user boosted the chat
 
-    ForumTopicCreated forum_topic_created = 70; // Optional. Service message: forum topic created
+	ChatBackground chat_background_set = 69; // Optional. Service message: chat background set
 
-    ForumTopicEdited forum_topic_edited = 71; // Optional. Service message: forum topic edited
+	ForumTopicCreated forum_topic_created = 70; // Optional. Service message: forum topic created
 
-    ForumTopicClosed forum_topic_closed = 72; // Optional. Service message: forum topic closed
+	ForumTopicEdited forum_topic_edited = 71; // Optional. Service message: forum topic edited
 
-    ForumTopicReopened forum_topic_reopened = 73; // Optional. Service message: forum topic reopened
+	ForumTopicClosed forum_topic_closed = 72; // Optional. Service message: forum topic closed
 
-    GeneralForumTopicHidden general_forum_topic_hidden = 74; // Optional. Service message: the 'General' forum topic hidden
+	ForumTopicReopened forum_topic_reopened = 73; // Optional. Service message: forum topic reopened
 
-    GeneralForumTopicUnhidden general_forum_topic_unhidden = 75; // Optional. Service message: the 'General' forum topic unhidden
+	GeneralForumTopicHidden general_forum_topic_hidden = 74; // Optional. Service message: the 'General' forum topic hidden
 
-    GiveawayCreated giveaway_created = 76; // Optional. Service message: a scheduled giveaway was created
+	GeneralForumTopicUnhidden general_forum_topic_unhidden = 75; // Optional. Service message: the 'General' forum topic unhidden
 
-    Giveaway giveaway = 77; // Optional. The message is a scheduled giveaway message
+	GiveawayCreated giveaway_created = 76; // Optional. Service message: a scheduled giveaway was created
 
-    GiveawayWinners giveaway_winners = 78; // Optional. A giveaway with public winners was completed
+	Giveaway giveaway = 77; // Optional. The message is a scheduled giveaway message
 
-    GiveawayCompleted giveaway_completed = 79; // Optional. Service message: a giveaway without public winners was completed
+	GiveawayWinners giveaway_winners = 78; // Optional. A giveaway with public winners was completed
 
-    VideoChatScheduled video_chat_scheduled = 80; // Optional. Service message: video chat scheduled
+	GiveawayCompleted giveaway_completed = 79; // Optional. Service message: a giveaway without public winners was completed
 
-    VideoChatStarted video_chat_started = 81; // Optional. Service message: video chat started
+	VideoChatScheduled video_chat_scheduled = 80; // Optional. Service message: video chat scheduled
 
-    VideoChatEnded video_chat_ended = 82; // Optional. Service message: video chat ended
+	VideoChatStarted video_chat_started = 81; // Optional. Service message: video chat started
 
-    VideoChatParticipantsInvited video_chat_participants_invited = 83; // Optional. Service message: new participants invited to a video chat
+	VideoChatEnded video_chat_ended = 82; // Optional. Service message: video chat ended
 
-    WebAppData web_app_data = 84; // Optional. Service message: data sent by a Web App
+	VideoChatParticipantsInvited video_chat_participants_invited = 83; // Optional. Service message: new participants invited to a video chat
 
-    InlineKeyboardMarkup reply_markup = 85; // Optional. Inline keyboard attached to the message. login_url buttons are represented as ordinary url buttons.
+	WebAppData web_app_data = 84; // Optional. Service message: data sent by a Web App
+
+	InlineKeyboardMarkup reply_markup = 85; // Optional. Inline keyboard attached to the message. login_url buttons are represented as ordinary url buttons.
 }
+
+// https://core.telegram.org/bots/api#maybeinaccessiblemessage
+/* 
+	This object describes a message that can be inaccessible to the bot. It can be one of
+
+	* Message
+	* InaccessibleMessage
+ */
+
+/*
+type	String	Type of the entity. Currently, can be “mention” (@username), “hashtag” (#hashtag), “cashtag” ($USD), “bot_command” (/start@jobs_bot), “url” (https://telegram.org), “email” (do-not-reply@telegram.org), “phone_number” (+1-212-555-0123), “bold” (bold text), “italic” (italic text), “underline” (underlined text), “strikethrough” (strikethrough text), “spoiler” (spoiler message), “blockquote” (block quotation), “expandable_blockquote” (collapsed-by-default block quotation), “code” (monowidth string), “pre” (monowidth block), “text_link” (for clickable text URLs), “text_mention” (for users without usernames), “custom_emoji” (for inline custom emoji stickers)
+offset	Integer	Offset in UTF-16 code units to the start of the entity
+length	Integer	Length of the entity in UTF-16 code units
+url	String	Optional. For “text_link” only, URL that will be opened after user taps on the text
+user	User	Optional. For “text_mention” only, the mentioned user
+language	String	Optional. For “pre” only, the programming language of the entity text
+custom_emoji_id	String	Optional. For “custom_emoji” only, unique identifier of the custom emoji. Use getCustomEmojiStickers to get full information about the sticker
+ */

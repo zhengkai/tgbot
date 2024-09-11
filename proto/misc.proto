@@ -78,10 +78,6 @@ message Location {
     // Define the Location fields here according to your schema
 }
 
-message MaybeInaccessibleMessage {
-    // Define the MaybeInaccessibleMessage fields here according to your schema
-}
-
 message Invoice {
     // Define the Invoice fields here according to your schema
 }
@@ -210,10 +206,6 @@ message ChosenInlineResult {
     // 定义 ChosenInlineResult 消息的字段
 }
 
-message CallbackQuery {
-    // 定义 CallbackQuery 消息的字段
-}
-
 message ShippingQuery {
     // 定义 ShippingQuery 消息的字段
 }
@@ -246,11 +238,6 @@ message InlineKeyboardMarkup {}
 message ReplyKeyboardMarkup {}
 message ReplyKeyboardRemove {}
 message ForceReply {}
-
-// Message representing reply parameters.
-message ReplyParameters {
-  // Add fields for ReplyParameters as required
-}
 
 // Message representing reply markup options.
 message ReplyMarkup {

@@ -4,6 +4,7 @@ package pb;
 
 import "message.proto";
 import "misc.proto";
+import "callback.proto";
 
 message Update {
     // The update's unique identifier. Update identifiers start from a certain
