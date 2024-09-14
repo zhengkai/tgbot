@@ -1,0 +1,22 @@
+syntax = "proto3";
+option go_package = "/pb";
+package pb;
+
+import "user.proto";
+import "chat.proto";
+
+message PhotoReturn {
+	uint64 message_id = 1;
+	User from = 2;
+	Chat chat = 3;
+	uint64 date = 4;
+	repeated Photo photo = 5;
+}
+
+message Photo {
+	string file_id = 1;
+	string file_unique_id = 2;
+	uint64 file_size = 3;
+	uint32 width = 4;
+	uint32 height = 5;
+}

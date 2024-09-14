@@ -2,6 +2,7 @@ package tgbot
 
 import (
 	"fmt"
+	"os"
 
 	"github.com/zhengkai/tgbot/pb"
 )
@@ -59,4 +60,20 @@ func (a *api) SendMessage(m any) (*pb.Message, error) {
 	err := httpPostJSON(url, m, re)
 
 	return nil, err
+}
+
+func (a *api) SendPhoto(chatId string, file *os.File) (*pb.PhotoReturn, error) {
+	url := a.urlBase + `sendPhoto`
+
+	m := map[string]any{
+		`chat_id`: chatId,
+		`photo`:   file,
+	}
+
+	o := &pb.PhotoReturn{}
+	err := httpUpload(url, m, o)
+	if err != nil {
+		return nil, err
+	}
+	return o, nil
 }

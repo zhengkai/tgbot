@@ -9,14 +9,12 @@ import (
 	"net/http"
 	"time"
 
-	jp "github.com/buger/jsonparser"
-	"github.com/zhengkai/tgbot/pb"
-
 	"google.golang.org/protobuf/proto"
 )
 
 var ErrHTTPCode = errors.New(`http code is not 200`)
 var ErrHTTPBody = errors.New(`read body fail`)
+var ErrNoOK = errors.New(`api fail: no "ok:true"`)
 
 var httpClient = &http.Client{
 	Timeout: 10 * time.Second,
@@ -32,36 +30,13 @@ func httpGetJSON(url string, d any) error {
 	client := &http.Client{
 		Timeout: 70 * time.Second,
 	}
-	res, err := client.Do(req)
+	rsp, err := client.Do(req)
 	if err != nil {
 		return err
 	}
-	ab, err := io.ReadAll(res.Body)
-	res.Body.Close()
-	if err != nil {
-		return err
-	}
+	parseHTTPRsp(rsp, d)
 
 	// fmt.Println(url, len(ab))
-
-	ok, err := jp.GetBoolean(ab, `ok`)
-	if !ok {
-		// fmt.Println(string(ab))
-		return errors.New(`api fail: no "ok:true"`)
-	}
-
-	ab, t, _, err := jp.Get(ab, `result`)
-	if len(ab) == 0 {
-		return errors.New(`api fail: no result`)
-	}
-	if t != jp.Object && t != jp.Array {
-		return errors.New(`api fail: result is not object`)
-	}
-
-	err = json.Unmarshal(ab, d)
-	if err != nil {
-		return err
-	}
 
 	return nil
 }
@@ -84,31 +59,8 @@ func httpPostJSON(url string, d any, re proto.Message) error {
 	if err != nil {
 		return err
 	}
-	defer rsp.Body.Close()
 
-	ab, err = io.ReadAll(rsp.Body)
-	if err != nil {
-
-		return ErrHTTPBody
-	}
-
-	if rsp.StatusCode != http.StatusOK {
-		fmt.Println(`http code not ok`, rsp.StatusCode)
-		o := &pb.Error{}
-		e2 := json.Unmarshal(ab, o)
-		if e2 != nil {
-			return ErrHTTPCode
-		}
-
-		// fmt.Println(rsp.StatusCode)
-		return errors.New(o.Description)
-	}
-
-	if re == nil {
-		return nil
-	}
-
-	return json.Unmarshal(ab, re)
+	return parseHTTPRsp(rsp, re)
 }
 
 func httpFetch(url string, w io.Writer) error {

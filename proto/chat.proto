@@ -2,7 +2,6 @@ syntax = "proto3";
 option go_package = "/pb";
 package pb;
 
-
 message Chat {
 	int64 id = 1;
 	string first_name = 2;
