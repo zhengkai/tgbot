@@ -77,3 +77,19 @@ func (a *api) SendPhoto(chatId string, file *os.File) (*pb.PhotoReturn, error) {
 	}
 	return o, nil
 }
+
+func (a *api) SendAnimation(chatId string, file *os.File) (*pb.PhotoReturn, error) {
+	url := a.urlBase + `sendAnimation`
+
+	m := map[string]any{
+		`chat_id`:   chatId,
+		`animation`: file,
+	}
+
+	o := &pb.PhotoReturn{}
+	err := httpUpload(url, m, o)
+	if err != nil {
+		return nil, err
+	}
+	return o, nil
+}
