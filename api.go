@@ -47,9 +47,10 @@ func (a *api) GetUpdates(offset uint64) ([]*pb.Update, error) {
 	return d, nil
 }
 
-func (a *api) SendChatAction(m *pb.SendChatAction) {
+func (a *api) SendChatAction(m *pb.SendChatAction) error {
 	url := a.urlBase + `sendChatAction`
-	httpPostJSON(url, m, nil)
+	var ok bool
+	return httpPostJSON(url, m, &ok)
 }
 
 func (a *api) SendMessage(m any) (*pb.Message, error) {
@@ -62,13 +63,14 @@ func (a *api) SendMessage(m any) (*pb.Message, error) {
 	return nil, err
 }
 
-func (a *api) SendPhoto(chatId string, file *os.File) (*pb.PhotoReturn, error) {
+func (a *api) SendPhoto(chatId string, file *os.File, arg *pb.SendPhoto) (*pb.PhotoReturn, error) {
 	url := a.urlBase + `sendPhoto`
 
 	m := map[string]any{
 		`chat_id`: chatId,
 		`photo`:   file,
 	}
+	parsePhotoMap(m, arg)
 
 	o := &pb.PhotoReturn{}
 	err := httpUpload(url, m, o)
@@ -78,13 +80,14 @@ func (a *api) SendPhoto(chatId string, file *os.File) (*pb.PhotoReturn, error) {
 	return o, nil
 }
 
-func (a *api) SendAnimation(chatId string, file *os.File) (*pb.PhotoReturn, error) {
+func (a *api) SendAnimation(chatId string, file *os.File, arg *pb.SendAnimation) (*pb.PhotoReturn, error) {
 	url := a.urlBase + `sendAnimation`
 
 	m := map[string]any{
 		`chat_id`:   chatId,
 		`animation`: file,
 	}
+	parsePhotoMap(m, arg)
 
 	o := &pb.PhotoReturn{}
 	err := httpUpload(url, m, o)

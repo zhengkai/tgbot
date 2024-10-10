@@ -8,8 +8,6 @@ import (
 	"io"
 	"net/http"
 	"time"
-
-	"google.golang.org/protobuf/proto"
 )
 
 var ErrHTTPCode = errors.New(`http code is not 200`)
@@ -36,18 +34,15 @@ func httpGetJSON(url string, d any) error {
 	}
 	parseHTTPRsp(rsp, d)
 
-	// fmt.Println(url, len(ab))
-
 	return nil
 }
 
-func httpPostJSON(url string, d any, re proto.Message) error {
+func httpPostJSON(url string, d any, re any) error {
 
 	ab, err := json.Marshal(d)
 	if err != nil {
 		return err
 	}
-	// fmt.Println(`send:`, string(ab))
 
 	req, err := http.NewRequest(http.MethodPost, url, bytes.NewReader(ab))
 	if err != nil {
@@ -70,6 +65,10 @@ func httpFetch(url string, w io.Writer) error {
 		return fmt.Errorf(`failed to initiate request: %v`, err)
 	}
 	defer resp.Body.Close()
+
+	for k, v := range resp.Header {
+		fmt.Println(k, v)
+	}
 
 	if resp.StatusCode != http.StatusOK {
 		return fmt.Errorf(`bad status: %s`, resp.Status)

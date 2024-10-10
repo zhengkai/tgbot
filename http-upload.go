@@ -2,6 +2,7 @@ package tgbot
 
 import (
 	"bytes"
+	"encoding/json"
 	"fmt"
 	"io"
 	"mime/multipart"
@@ -53,6 +54,11 @@ func httpUploadBuildBody(m map[string]any) (io.Reader, string, error) {
 			_, err = io.Copy(part, rv)
 			if err != nil {
 				return nil, ``, err
+			}
+		default:
+			ab, err := json.Marshal(v)
+			if err == nil {
+				writer.WriteField(k, string(ab))
 			}
 		}
 	}

@@ -3,6 +3,7 @@ package tgbot
 import (
 	"encoding/json"
 	"errors"
+	"fmt"
 	"io"
 	"net/http"
 
@@ -29,6 +30,8 @@ func parseHTTPRsp(rsp *http.Response, re any) error {
 }
 
 func parseHTTPResult(ab []byte, re any) error {
+
+	fmt.Println(`parseHTTPResult`, string(ab))
 
 	ok, _ := jp.GetBoolean(ab, `ok`)
 	if !ok {

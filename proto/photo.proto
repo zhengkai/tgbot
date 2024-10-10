@@ -4,6 +4,8 @@ package pb;
 
 import "user.proto";
 import "chat.proto";
+import "misc.proto";
+import "reply.proto";
 
 message PhotoReturn {
 	uint64 message_id = 1;
@@ -19,4 +21,42 @@ message Photo {
 	uint64 file_size = 3;
 	uint32 width = 4;
 	uint32 height = 5;
+}
+
+message sendPhoto {
+	string business_connection_id = 1;
+	string chat_id = 2;
+	int64 message_thread_id = 3;
+	string photo = 4;
+	string caption = 5;
+	string parse_mode = 6;
+	repeated MessageEntity caption_entities = 7;
+	bool show_caption_above_media = 8;
+	bool has_spoiler = 9;
+	bool disable_notification = 10;
+	bool protect_content = 11;
+	string message_effect_id = 12;
+	ReplyParameters reply_parameters = 13;
+	ReplyMarkup reply_markup = 14;
+}
+
+message sendAnimation {
+	string business_connection_id = 1;
+	string chat_id = 2;
+	int64 message_thread_id = 3;
+	string animation = 4;
+	string caption = 5;
+	string parse_mode = 6;
+	repeated MessageEntity caption_entities = 7;
+	bool show_caption_above_media = 8;
+	bool has_spoiler = 9;
+	bool disable_notification = 10;
+	bool protect_content = 11;
+	string message_effect_id = 12;
+	ReplyParameters reply_parameters = 13;
+	ReplyMarkup reply_markup = 14;
+	uint32 duration = 15;
+	uint32 width = 16;
+	uint32 height = 17;
+	string thumbnail = 18;
 }
