@@ -60,7 +60,7 @@ func (a *api) SendMessage(m any) (*pb.Message, error) {
 
 	err := httpPostJSON(url, m, re)
 
-	return nil, err
+	return re, err
 }
 
 func (a *api) SendPhoto(chatId string, file *os.File, arg *pb.SendPhoto) (*pb.PhotoReturn, error) {
